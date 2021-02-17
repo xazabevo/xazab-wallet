@@ -35,11 +35,11 @@
             android:layout_height="150dp"
             android:layout_margin="10dp"
             android:inputType="textMultiLine|textNoSuggestions|textVisiblePassword"
-            android:background="@color/dash_white"
+            android:background="@color/xazab_white"
             app:layout_constraintTop_toBottomOf="@id/label" />
 
         <Button
-            style="@style/DashButton.Blue"
+            style="@style/XazabButton.Blue"
             android:id="@+id/submit"
             android:enabled="false"
             android:layout_width="match_parent"

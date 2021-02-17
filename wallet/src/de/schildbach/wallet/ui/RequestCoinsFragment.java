@@ -27,11 +27,11 @@ import org.bitcoinj.protocols.payments.PaymentProtocol;
 import org.bitcoinj.uri.BitcoinURI;
 import org.bitcoinj.uri.BitcoinURIParseException;
 import org.bitcoinj.wallet.Wallet;
-import org.dash.wallet.common.ui.CurrencyAmountView;
+import org.xazab.wallet.common.ui.CurrencyAmountView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.offline.AcceptBluetoothService;
@@ -154,7 +154,7 @@ public final class RequestCoinsFragment extends Fragment implements NfcAdapter.C
             }
         });
 
-        final CurrencyAmountView btcAmountView = (CurrencyAmountView) view.findViewById(R.id.request_coins_amount_dash);
+        final CurrencyAmountView btcAmountView = (CurrencyAmountView) view.findViewById(R.id.request_coins_amount_xazab);
         btcAmountView.setCurrencySymbol(config.getFormat().code());
         btcAmountView.setInputFormat(config.getMaxPrecisionFormat());
         btcAmountView.setHintFormat(config.getFormat());
@@ -330,15 +330,15 @@ public final class RequestCoinsFragment extends Fragment implements NfcAdapter.C
 
     private void handleCopy() {
         final Uri request = Uri.parse(determineBitcoinRequestStr(false));
-        clipboardManager.setPrimaryClip(ClipData.newRawUri("Dash payment request", request));
+        clipboardManager.setPrimaryClip(ClipData.newRawUri("Xazab payment request", request));
         log.info("payment request copied to clipboard: {}", request);
         new Toast(activity).toast(R.string.request_coins_clipboard_msg);
     }
-    //Dash Specific
+    //Xazab Specific
     private void handleCopyAddress() {
         try {
             final Uri request = Uri.parse(determineBitcoinRequestStr(false));
-            clipboardManager.setPrimaryClip(ClipData.newPlainText("Dash address", new BitcoinURI(request.toString()).getAddress().toString()));
+            clipboardManager.setPrimaryClip(ClipData.newPlainText("Xazab address", new BitcoinURI(request.toString()).getAddress().toString()));
             log.info("address copied to clipboard: {}", request);
             new Toast(activity).toast(R.string.request_coins_clipboard_address_msg);
         }
@@ -387,7 +387,7 @@ public final class RequestCoinsFragment extends Fragment implements NfcAdapter.C
         // update qr-code
         final String qrContent;
         if (config.getQrPaymentRequestEnabled())
-            qrContent = "DASH:-" + Qr.encodeBinary(paymentRequest);
+            qrContent = "XAZAB:-" + Qr.encodeBinary(paymentRequest);
         else
             qrContent = bitcoinRequest;
         qrCodeBitmap = new BitmapDrawable(getResources(), Qr.bitmap(qrContent));

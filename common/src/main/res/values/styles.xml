@@ -439,7 +439,7 @@
         <item name="android:layout_marginTop">2dp</item>
         <item name="android:layout_marginRight">12dp</item>
         <item name="layout_constraintEnd_toEndOf">parent</item>
-        <item name="android:textColor">@color/dash_gray</item>
+        <item name="android:textColor">@color/xazab_gray</item>
         <item name="android:textSize">12sp</item>
     </style>
 
@@ -481,7 +481,7 @@
         <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
-    <style name="DashButton.Blue" parent="Widget.AppCompat.Button.Borderless">
+    <style name="XazabButton.Blue" parent="Widget.AppCompat.Button.Borderless">
         <item name="fontFamily">@font/montserrat_regular</item>
         <item name="android:textColor">@drawable/blue_button_text</item>
         <item name="android:background">@drawable/blue_button_background</item>
@@ -489,32 +489,32 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="DashButton.White.Bordered" parent="DashButton.Blue">
+    <style name="XazabButton.White.Bordered" parent="XazabButton.Blue">
         <item name="android:textColor">@drawable/white_button_bordered_text</item>
         <item name="android:background">@drawable/white_button_bordered_background</item>
     </style>
 
-    <style name="DashButton.Transparent" parent="DashButton.Blue">
+    <style name="XazabButton.Transparent" parent="XazabButton.Blue">
         <item name="android:textColor">@drawable/transparent_button_text</item>
         <item name="android:background">@drawable/transparent_button_background</item>
     </style>
 
-    <style name="DashButton.Transparent.Dark" parent="DashButton.Blue">
-        <item name="android:textColor">@color/dash_black</item>
+    <style name="XazabButton.Transparent.Dark" parent="XazabButton.Blue">
+        <item name="android:textColor">@color/xazab_black</item>
         <item name="android:background">@drawable/transparent_dark_button_background</item>
     </style>
 
-    <style name="DashButton.White" parent="DashButton.Blue">
+    <style name="XazabButton.White" parent="XazabButton.Blue">
         <item name="android:textColor">@drawable/white_button_text</item>
         <item name="android:background">@drawable/white_button_background</item>
     </style>
 
-    <style name="DashButton.Gray" parent="DashButton.Blue">
+    <style name="XazabButton.Gray" parent="XazabButton.Blue">
         <item name="android:textColor">@drawable/gray_button_text</item>
         <item name="android:background">@drawable/gray_button_background</item>
     </style>
 
-    <style name="Panel.Red" parent="DashButton.Blue">
+    <style name="Panel.Red" parent="XazabButton.Blue">
         <item name="android:background">@drawable/red_panel_background</item>
     </style>
 
@@ -547,7 +547,7 @@
 
     <style name="FancyButton" parent="Widget.AppCompat.Button.Borderless">
         <item name="fontFamily">@font/montserrat_regular</item>
-        <item name="android:textColor">@color/dash_white</item>
+        <item name="android:textColor">@color/xazab_white</item>
         <item name="android:background">@drawable/main_button</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">false</item>

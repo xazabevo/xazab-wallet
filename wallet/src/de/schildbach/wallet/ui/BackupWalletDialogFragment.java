@@ -38,7 +38,7 @@ import org.bitcoinj.wallet.UnreadableWalletException;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.WalletProtobufSerializer;
 import org.bouncycastle.crypto.params.KeyParameter;
-import org.dash.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.DialogBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

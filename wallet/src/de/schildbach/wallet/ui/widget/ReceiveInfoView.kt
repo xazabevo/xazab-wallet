@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ import org.bitcoinj.core.Address
 import org.bitcoinj.core.Coin
 import org.bitcoinj.uri.BitcoinURI
 import org.bitcoinj.uri.BitcoinURIParseException
-import org.dash.wallet.common.Configuration
+import org.xazab.wallet.common.Configuration
 import org.slf4j.LoggerFactory
 
 
@@ -69,7 +69,7 @@ class ReceiveInfoView(context: Context, attrs: AttributeSet?) : ConstraintLayout
 
             val qrPreviewScale = attrsArray.getFloat(R.styleable.ReceiveInfoView_ri_qr_code_scale, 1.0f)
             (qr_preview.layoutParams as LayoutParams).matchConstraintPercentWidth = qrPreviewScale
-            (qr_dash_logo.layoutParams as LayoutParams).matchConstraintPercentWidth = (qrPreviewScale / 5.5f)
+            (qr_xazab_logo.layoutParams as LayoutParams).matchConstraintPercentWidth = (qrPreviewScale / 5.5f)
 
         } finally {
             attrsArray.recycle()
@@ -122,9 +122,9 @@ class ReceiveInfoView(context: Context, attrs: AttributeSet?) : ConstraintLayout
         try {
             val clipboardManager = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             if (amount != null) {
-                clipboardManager.setPrimaryClip(ClipData.newPlainText("Dash payment request", paymentRequestUri))
+                clipboardManager.setPrimaryClip(ClipData.newPlainText("Xazab payment request", paymentRequestUri))
             } else {
-                clipboardManager.setPrimaryClip(ClipData.newPlainText("Dash address", address.toBase58()))
+                clipboardManager.setPrimaryClip(ClipData.newPlainText("Xazab address", address.toBase58()))
             }
             Toast(context).toast(R.string.receive_copied)
             log.info("address copied to clipboard: {}", address)

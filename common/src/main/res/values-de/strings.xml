@@ -3,7 +3,7 @@
 
     <string name="loading">Laden...</string>
     <string name="loading_error">Ein Fehler ist aufgetreten. Bitte versuche es später noch einmal.</string>
-    <string name="dash_available">%1$s verfügbar</string>
+    <string name="xazab_available">%1$s verfügbar</string>
 
     <!-- Local Currency List: GGP -->
     <string name="currency_GGP">Guernsey Pfund</string>

@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/currency_symbol_dash" />
+                    android:src="@drawable/currency_symbol_xazab" />
 
                 <TextView
                     android:id="@+id/widget_wallet_balance_btc"
@@ -97,7 +97,7 @@
         android:padding="16dp"
         app:srcCompat="@drawable/splash_activity_slogan"
         android:text="@string/appwidget_wallet_not_ready"
-        android:textColor="@color/dash_white"
+        android:textColor="@color/xazab_white"
         android:textSize="@dimen/font_size_normal"
         tools:visibility="gone" />
 

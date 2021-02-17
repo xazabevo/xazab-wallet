@@ -1,36 +1,36 @@
 Foloseşte pe propria răspundere! (Necesită Android 4 sau mai recent)
 
-<b>Poți avea Dash mereu cu tine, în propriul buzunar!</b> Plătește prin scanarea rapidă a unui cod QR. Ca și comerciant, primești plăți în mod fiabil și instantaneu. Portofelul Dash este prima aplicație mobilă Dash și, fără îndoială, cea mai sigură!
+<b>Poți avea Xazab mereu cu tine, în propriul buzunar!</b> Plătește prin scanarea rapidă a unui cod QR. Ca și comerciant, primești plăți în mod fiabil și instantaneu. Portofelul Xazab este prima aplicație mobilă Xazab și, fără îndoială, cea mai sigură!
 
 <b>CARACTERISTICI</b>
 
 • Nu este nevoie de înregistrare, serviciu web sau cloud! Acest portofel este descentralizat și peer to peer.
-• Afișarea sumelor Dash în DASH, mDASH și μDASH.
+• Afișarea sumelor Xazab în XAZAB, mXAZAB și μXAZAB.
 • Conversie către și din valute naționale.
-• Trimiterea și primirea Dash prin NFC, coduri QR sau adrese URL Dash.
-• Carte de adrese pentru adresele Dash utilizate în mod regulat.
+• Trimiterea și primirea Xazab prin NFC, coduri QR sau adrese URL Xazab.
+• Carte de adrese pentru adresele Xazab utilizate în mod regulat.
 • Când ești offline, poți plăti în continuare prin Bluetooth.
 • Notificarea sistemului pentru monedele primite.
 • Sweeping pentru portofelele de hârtie (de exemplu, cele utilizate pentru depozitarea la rece).
-• Widget pentru soldul Dash.
+• Widget pentru soldul Xazab.
 
 
 <b>CONTRIBUIE</b>
 
-Portofelul Dash este <b>open source</b> si <b>free software</b>. Licența: GPLv3
+Portofelul Xazab este <b>open source</b> si <b>free software</b>. Licența: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Codul sursă este disponibil pe GitHub:
-https://github.com/HashEngineering/dash-wallet
+https://github.com/xazabevo/xazab-wallet
 
 Toate traducerile sunt gestionate prin intermediul Transifex:
-https://www.transifex.com/dash/dash-wallet/
+https://www.transifex.com/xazab/xazab-wallet/
 
-Poți afla mai mult despre Dash la
-https://www.dash.org/
+Poți afla mai mult despre Xazab la
+https://www.xazab.xyz/
 
 <b>MĂRTURII</b>
 
-• Un portofel mobil recomandat de https://www.dash.org
+• Un portofel mobil recomandat de https://www.xazab.xyz
 
 <i>Folosește pe propria răspundere!</i>

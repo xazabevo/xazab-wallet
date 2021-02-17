@@ -13,14 +13,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/dash_logo"
+        android:id="@+id/xazab_logo"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_marginTop="@dimen/about_logo_margin_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_bar_include"
-        app:srcCompat="@drawable/ic_dash_logo_blue" />
+        app:srcCompat="@drawable/ic_xazab_logo_blue" />
 
     <TextView
         android:id="@+id/app_version_name"
@@ -32,8 +32,8 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dash_logo"
-        tools:text="Dash Wallet v7.0.0-redesign" />
+        app:layout_constraintTop_toBottomOf="@+id/xazab_logo"
+        tools:text="Xazab Wallet v7.0.0-redesign" />
 
     <TextView
         android:id="@+id/library_version_name"
@@ -49,7 +49,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_version_name"
-        tools:text="DashJ 17.0.0" />
+        tools:text="XazabJ 17.0.0" />
 
     <TextView
         android:id="@+id/fork_disclaimer"
@@ -76,7 +76,7 @@
         android:layout_marginEnd="32dp"
         android:gravity="center"
         android:text="@string/about_github_link"
-        android:textColor="@color/dash_blue"
+        android:textColor="@color/xazab_blue"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

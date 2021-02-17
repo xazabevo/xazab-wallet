@@ -9,7 +9,7 @@ import de.schildbach.wallet.ui.receive.ReceiveDetailsDialog
 import de.schildbach.wallet.ui.send.EnterAmountSharedViewModel
 import de.schildbach.wallet_test.R
 import org.bitcoinj.core.Coin
-import org.dash.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.InteractionAwareActivity
 
 class ReceiveActivity : InteractionAwareActivity() {
 
@@ -40,9 +40,9 @@ class ReceiveActivity : InteractionAwareActivity() {
         enterAmountSharedViewModel.buttonTextData.call(R.string.receive_title)
         enterAmountSharedViewModel.messageTextData.value = R.string.receive_enter_amount_message
         enterAmountSharedViewModel.buttonClickEvent.observe(this, Observer {
-            val dashAmount = enterAmountSharedViewModel.dashAmount
-            val fiatAmount = enterAmountSharedViewModel.exchangeRate?.coinToFiat(dashAmount)
-            val dialog = ReceiveDetailsDialog.createDialog(dashAmount, fiatAmount)
+            val xazabAmount = enterAmountSharedViewModel.xazabAmount
+            val fiatAmount = enterAmountSharedViewModel.exchangeRate?.coinToFiat(xazabAmount)
+            val dialog = ReceiveDetailsDialog.createDialog(xazabAmount, fiatAmount)
             dialog.show(supportFragmentManager, "ReceiveDetailsDialog")
         })
     }

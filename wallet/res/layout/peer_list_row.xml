@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:lines="1"
-        android:textColor="@color/dash_black"
+        android:textColor="@color/xazab_black"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@id/peer_list_row_height"
         app:layout_constraintHorizontal_bias="0"
@@ -35,7 +35,7 @@
         style="@style/MontserratRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/dash_black"
+        android:textColor="@color/xazab_black"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/peer_list_row_ip"
@@ -51,7 +51,7 @@
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/peer_list_row_height"
-        tools:text="/Dash Core:0.12.3.2/\nprotocol: 70210" />
+        tools:text="/Xazab Core:0.12.3.2/\nprotocol: 70210" />
 
     <TextView
         android:id="@+id/peer_list_row_ping"

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,19 +25,19 @@ import org.bitcoinj.utils.Fiat
 
 class EnterAmountViewModel(application: Application) : AndroidViewModel(application) {
 
-    val dashToFiatDirectionData = MutableLiveData<Boolean>()
-    val dashToFiatDirectionValue: Boolean
-        get() = (dashToFiatDirectionData.value == true)
+    val xazabToFiatDirectionData = MutableLiveData<Boolean>()
+    val xazabToFiatDirectionValue: Boolean
+        get() = (xazabToFiatDirectionData.value == true)
 
-    val dashAmountData = MutableLiveData<Coin>()
+    val xazabAmountData = MutableLiveData<Coin>()
     val fiatAmountData = MutableLiveData<Fiat>()
 
     fun calculateDependent(exchangeRate: ExchangeRate?) {
         exchangeRate?.run {
-            if (dashToFiatDirectionValue) {
-                fiatAmountData.value = coinToFiat(dashAmountData.value)
+            if (xazabToFiatDirectionValue) {
+                fiatAmountData.value = coinToFiat(xazabAmountData.value)
             } else {
-                dashAmountData.value = fiatToCoin(fiatAmountData.value)
+                xazabAmountData.value = fiatToCoin(fiatAmountData.value)
             }
         }
     }

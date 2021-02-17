@@ -24,7 +24,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import android.text.Html;
 
-import org.dash.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.DialogBuilder;
 
 /**
  * @author Andreas Schildbach

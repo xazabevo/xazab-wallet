@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group.
+ * Copyright 2020 Xazab Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -56,7 +56,7 @@ class ShortcutsPane(context: Context, attrs: AttributeSet) : LinearLayout(contex
     }
     val buySellButton: ShortcutButton by lazy {
         ShortcutButton(context,
-                R.drawable.ic_shortcut_buy_sell_dash,
+                R.drawable.ic_shortcut_buy_sell_xazab,
                 R.string.shortcut_buy_sell,
                 this)
     }
@@ -77,7 +77,7 @@ class ShortcutsPane(context: Context, attrs: AttributeSet) : LinearLayout(contex
     private val secondaryItems = mutableListOf<ShortcutButton>()
 
     private var showSecureNow: Boolean = true
-    private var showJoinDashPay: Boolean = true
+    private var showJoinXazabPay: Boolean = true
     private var showPayToContact: Boolean = true
 
     private var onShortcutClickListener: OnClickListener? = null
@@ -144,8 +144,8 @@ class ShortcutsPane(context: Context, attrs: AttributeSet) : LinearLayout(contex
         refresh()
     }
 
-    fun showJoinDashPay(showJoinDashPay: Boolean) {
-        this.showJoinDashPay = showJoinDashPay
+    fun showJoinXazabPay(showJoinXazabPay: Boolean) {
+        this.showJoinXazabPay = showJoinXazabPay
         refresh()
     }
 

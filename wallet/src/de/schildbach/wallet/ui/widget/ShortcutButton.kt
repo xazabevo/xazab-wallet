@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group.
+ * Copyright 2020 Xazab Core Group.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -120,7 +120,7 @@ class ShortcutButton : LinearLayout {
             action_icon.alpha = 1.0f
             alpha = 1.0f
         } else {
-            val tintColor = ResourcesCompat.getColor(resources, R.color.dash_gray, null)
+            val tintColor = ResourcesCompat.getColor(resources, R.color.xazab_gray, null)
             action_icon.setColorFilter(tintColor)
             action_icon.alpha = 0.7f
             alpha = 0.5f

@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:id="@+id/sync_progress_pane"
-        style="@style/DashButton.White"
+        style="@style/XazabButton.White"
         android:layout_width="match_parent"
         android:layout_height="80dp">
 
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sync_status_syncing_sub_title"
-                android:textColor="@color/dash_gray" />
+                android:textColor="@color/xazab_gray" />
 
         </LinearLayout>
 
@@ -49,7 +49,7 @@
             android:fontFamily="@font/montserrat_regular"
             android:gravity="right"
             android:text="0%"
-            android:textColor="@color/dash_blue"
+            android:textColor="@color/xazab_blue"
             android:textSize="24sp" />
 
         <ProgressBar
@@ -88,14 +88,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="@string/sync_status_unable_to_connect"
-                android:textColor="@color/dash_white" />
+                android:textColor="@color/xazab_white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="@string/sync_status_check_connection"
-                android:textColor="@color/dash_white" />
+                android:textColor="@color/xazab_white" />
 
         </LinearLayout>
 

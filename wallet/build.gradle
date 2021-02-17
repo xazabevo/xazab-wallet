@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 ext {
-    archivesBaseName = 'dash-wallet'
+    archivesBaseName = 'xazab-wallet'
     androidSupportVersion = '29.0.0'
     lifecycleVersion = "2.2.0"
 }
@@ -12,7 +12,7 @@ repositories {
         name 'OJO snapshots'
     }
     maven {
-        url 'http://dl.bintray.com/dash/Dashj'
+        url 'http://dl.bintray.com/xazab/Xazabj'
     }
     maven {
         url 'https://maven.google.com/'
@@ -41,10 +41,10 @@ dependencies {
     implementation 'com.google.android:flexbox:1.1.0'
     implementation 'androidx.preference:preference:1.1.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation "org.dashj:dashj-core:$dashjVersion"
-    implementation "org.dashj-android:dashj-bls-android:0.17.5"
-    implementation "org.dashj-android:dashj-x11-android:0.17.5"
-    implementation "org.dashj-android:dashj-scrypt-android:0.17.5"
+    implementation "org.xazabj:xazabj-core:$xazabjVersion"
+    implementation "org.xazabj-android:xazabj-bls-android:0.17.5"
+    implementation "org.xazabj-android:xazabj-x11-android:0.17.5"
+    implementation "org.xazabj-android:xazabj-scrypt-android:0.17.5"
     implementation 'com.google.guava:guava:29.0-android'
     implementation 'com.google.zxing:core:3.3.3'    // 3.3.3 is the maximum to support Android 4.4 to 6.x
     implementation "com.squareup.okhttp3:okhttp:$ok_http_version"
@@ -105,7 +105,7 @@ dependencies {
 
 
 ext {
-    archivesBaseName = 'dash-wallet'
+    archivesBaseName = 'xazab-wallet'
 }
 
 android {
@@ -170,16 +170,16 @@ android {
     flavorDimensions "default"
     productFlavors {
         beta {
-            applicationId = "hashengineering.dash.wallet.beta"
+            applicationId = "xazabevo.xazab.wallet.beta"
         }
         prod {
-            applicationId = "hashengineering.darkcoin.wallet"
+            applicationId = "xazabevo.xazab.wallet"
         }
         _testNet3 {
-            applicationId = "hashengineering.darkcoin.wallet_test"
+            applicationId = "xazabevo.xazab.wallet_test"
         }
         devNet {
-            applicationId = "hashengineering.darkcoin.wallet.devnet"
+            applicationId = "xazabevo.xazab.wallet.devnet"
         }
     }
 

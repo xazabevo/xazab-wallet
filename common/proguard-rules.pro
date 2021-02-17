@@ -1,5 +1,5 @@
 -keepattributes Exceptions, InnerClasses
--keep public class org.dash.wallet.common.** {
+-keep public class org.xazab.wallet.common.** {
     public protected *;
 }
--keep public interface org.dash.wallet.common.** {*;}
+-keep public interface org.xazab.wallet.common.** {*;}

@@ -36,6 +36,6 @@
         android:layout_toLeftOf="@id/address_fragment"
         android:layout_toStartOf="@id/address_fragment"
         android:layout_alignBottom="@id/address_fragment"
-        app:srcCompat="@drawable/dash_logo_white"/>
+        app:srcCompat="@drawable/xazab_logo_white"/>
 
 </RelativeLayout>

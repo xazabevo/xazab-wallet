@@ -48,7 +48,7 @@ import org.bitcoinj.protocols.payments.PaymentProtocolException;
 import org.bitcoinj.protocols.payments.PaymentSession;
 import org.bitcoinj.uri.BitcoinURI;
 import org.bitcoinj.uri.BitcoinURIParseException;
-import org.dash.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.DialogBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -79,8 +79,8 @@ public abstract class InputParser {
 
         public StringInputParser(final String input, boolean supportAnypayUrls) {
             if (supportAnypayUrls) {
-                // replaces Anypay scheme with the Dash one
-                // ie "pay:?r=https://(...)" become "dash:?r=https://(...)"
+                // replaces Anypay scheme with the Xazab one
+                // ie "pay:?r=https://(...)" become "xazab:?r=https://(...)"
                 if (input.startsWith(SendCoinsActivity.ANYPAY_SCHEME + ":")) {
                     this.input = input.replaceFirst(SendCoinsActivity.ANYPAY_SCHEME, CoinDefinition.coinURIScheme);
                     return;
@@ -295,7 +295,7 @@ public abstract class InputParser {
             try {
                 walletUri = WalletUri.parse(input);
             } catch (BitcoinURIParseException x) {
-                log.info("got invalid dashwallet uri: '" + input + "'", x);
+                log.info("got invalid xazabwallet uri: '" + input + "'", x);
 
                 error(x, R.string.input_parser_invalid_bitcoin_uri, input);
                 return;
@@ -307,7 +307,7 @@ public abstract class InputParser {
                     bitcoinUri = walletUri.toBitcoinUri();
                     handlePaymentIntent(PaymentIntent.fromBitcoinUri(bitcoinUri), walletUri.forceInstantSend());
                 } catch (BitcoinURIParseException x) {
-                    log.info("got invalid dashwallet uri: '" + input + "'", x);
+                    log.info("got invalid xazabwallet uri: '" + input + "'", x);
 
                     error(x, R.string.input_parser_invalid_bitcoin_uri, input);
                 }

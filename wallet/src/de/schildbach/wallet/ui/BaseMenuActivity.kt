@@ -1,5 +1,5 @@
 /*
-* Copyright 2019 Dash Core Group
+* Copyright 2019 Xazab Core Group
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -24,8 +24,8 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.widget.Toolbar
 import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet_test.R
-import org.dash.wallet.common.Configuration
-import org.dash.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.Configuration
+import org.xazab.wallet.common.InteractionAwareActivity
 
 /**
  * @author Samuel Barbosa

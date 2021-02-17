@@ -25,7 +25,7 @@
             style="?attr/buttonBarNeutralButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/dash_blue"
+            android:textColor="@color/xazab_blue"
             android:visibility="gone"
             tools:visibility="visible" />
 
@@ -41,14 +41,14 @@
             style="?attr/buttonBarNegativeButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/dash_blue" />
+            android:textColor="@color/xazab_blue" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/positive_button"
             style="?attr/buttonBarPositiveButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/dash_blue" />
+            android:textColor="@color/xazab_blue" />
 
     </androidx.appcompat.widget.ButtonBarLayout>
 

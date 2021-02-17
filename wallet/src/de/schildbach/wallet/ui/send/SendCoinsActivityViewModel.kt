@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,9 +41,9 @@ open class SendCoinsActivityViewModel(application: Application) : AndroidViewMod
 
     val basePaymentIntent = MutableLiveData<Resource<PaymentIntent>>()
 
-    fun initStateFromDashUri(dashUri: Uri) {
+    fun initStateFromXazabUri(xazabUri: Uri) {
 
-        val input = dashUri.toString()
+        val input = xazabUri.toString()
         object : StringInputParser(input, true) {
             override fun handlePaymentIntent(paymentIntent: PaymentIntent) {
                 basePaymentIntent.value = Resource.success(paymentIntent)

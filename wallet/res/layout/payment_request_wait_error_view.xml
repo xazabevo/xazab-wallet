@@ -55,7 +55,7 @@
             android:gravity="center"
             android:padding="16dp"
             android:text="@string/payment_request_please_wait_title"
-            android:textColor="@color/dash_white"
+            android:textColor="@color/xazab_white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
             android:gravity="center"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:textColor="@color/dash_red"
+            android:textColor="@color/xazab_red"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -102,14 +102,14 @@
 
         <Button
             android:id="@+id/confirm"
-            style="@style/DashButton.Blue"
+            style="@style/XazabButton.Blue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/payment_request_try_again" />
 
         <Button
             android:id="@+id/cancel"
-            style="@style/DashButton.Transparent.Dark"
+            style="@style/XazabButton.Transparent.Dark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

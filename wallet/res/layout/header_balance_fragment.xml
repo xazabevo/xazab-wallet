@@ -41,7 +41,7 @@
                     android:layout_gravity="center"
                     android:gravity="center_horizontal"
                     android:text="@string/sync_status_wait"
-                    android:textColor="@color/dash_light_gray"
+                    android:textColor="@color/xazab_light_gray"
                     android:textSize="16sp"
                     app:fontFamily="@font/montserrat_regular" />
 
@@ -66,11 +66,11 @@
                             android:layout_height="18dp"
                             android:layout_marginEnd="4dp"
                             android:layout_marginRight="4dp"
-                            app:srcCompat="@drawable/ic_dash_d_white"
+                            app:srcCompat="@drawable/ic_xazab_d_white"
                             tools:ignore="ContentDescription" />
 
-                        <org.dash.wallet.common.ui.CurrencyTextView
-                            android:id="@+id/wallet_balance_dash"
+                        <org.xazab.wallet.common.ui.CurrencyTextView
+                            android:id="@+id/wallet_balance_xazab"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ellipsize="end"
@@ -81,15 +81,15 @@
 
                     </LinearLayout>
 
-                    <org.dash.wallet.common.ui.CurrencyTextView
+                    <org.xazab.wallet.common.ui.CurrencyTextView
                         android:id="@+id/wallet_balance_local"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:textColor="@color/dash_light_gray"
+                        android:textColor="@color/xazab_light_gray"
                         android:textSize="14sp"
                         app:fontFamily="@font/montserrat_regular"
-                        app:prefixColor="@color/dash_light_gray" />
+                        app:prefixColor="@color/xazab_light_gray" />
 
                 </LinearLayout>
 
@@ -110,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/dash_light_gray"
+                android:textColor="@color/xazab_light_gray"
                 android:textSize="@dimen/font_size_tiny" />
 
         </LinearLayout>

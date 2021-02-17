@@ -35,9 +35,9 @@ import org.bitcoinj.utils.Fiat;
 import org.bitcoinj.utils.MonetaryFormat;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.Wallet.BalanceType;
-import org.dash.wallet.common.Configuration;
-import org.dash.wallet.common.util.GenericUtils;
-import org.dash.wallet.common.util.MonetarySpannable;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.util.GenericUtils;
+import org.xazab.wallet.common.util.MonetarySpannable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,7 +49,7 @@ import de.schildbach.wallet.ui.QuickReceiveActivity;
 import de.schildbach.wallet.ui.SendCoinsQrActivity;
 import de.schildbach.wallet_test.R;
 
-import static org.dash.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
+import static org.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
 
 /**
  * @author Andreas Schildbach

@@ -21,7 +21,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
         android:text="@string/receive_title"
-        android:textColor="@color/dash_black"
+        android:textColor="@color/xazab_black"
         android:textSize="18sp" />
 
     <FrameLayout
@@ -31,7 +31,7 @@
         android:background="#c7c7c7" />
 
     <include
-        layout="@layout/dash_fiat_amount_layout"
+        layout="@layout/xazab_fiat_amount_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

@@ -1,5 +1,5 @@
 #
-# Copyright 2020 Dash Core Group
+# Copyright 2020 Xazab Core Group
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ androidFiles = {"../wallet/res/values/strings.xml",
                 "../uphold-integration/src/main/res/values/strings-uphold.xml"
                 }
 
-iOSFiles = {"iOS/app-localizable-strings.strings", "iOS/dashsync-localizable-strings.strings"}
+iOSFiles = {"iOS/app-localizable-strings.strings", "iOS/xazabsync-localizable-strings.strings"}
 
 # primary lists
 androidStrings = {}

@@ -21,7 +21,7 @@
 
             <ImageView
                 android:id="@+id/uphold_withdrawal_amount_icon"
-                android:src="@drawable/ic_dash_d_white_bottom"
+                android:src="@drawable/ic_xazab_d_white_bottom"
                 android:tint="@color/medium_gray"
                 android:layout_marginTop="1dp"
                 android:layout_height="14dp"
@@ -40,13 +40,13 @@
 
         </LinearLayout>
 
-        <org.dash.wallet.common.ui.CurrencyAmountView
-            android:id="@+id/send_coins_amount_dash"
+        <org.xazab.wallet.common.ui.CurrencyAmountView
+            android:id="@+id/send_coins_amount_xazab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/dash_amount"
+                android:id="@+id/xazab_amount"
                 android:drawablePadding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                 style="@style/MontserratRegular"
                 tools:ignore="TextFields" />
 
-        </org.dash.wallet.common.ui.CurrencyAmountView>
+        </org.xazab.wallet.common.ui.CurrencyAmountView>
 
     </LinearLayout>
 

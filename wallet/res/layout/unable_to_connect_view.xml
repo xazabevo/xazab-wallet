@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dash_blue"
+    android:background="@color/xazab_blue"
     tools:context="de.schildbach.wallet.ui.widget.PaymentRequestWaitErrorView"
     tools:parentTag="FrameLayout">
 
@@ -47,7 +47,7 @@
             android:gravity="center"
             android:padding="16dp"
             android:text="@string/payment_request_please_wait_title"
-            android:textColor="@color/dash_white"
+            android:textColor="@color/xazab_white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="@string/payment_request_please_wait_message"
-            android:textColor="@color/dash_white"
+            android:textColor="@color/xazab_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title" />

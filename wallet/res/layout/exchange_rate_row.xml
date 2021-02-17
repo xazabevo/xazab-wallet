@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <org.dash.wallet.common.ui.CurrencyTextView
+    <org.xazab.wallet.common.ui.CurrencyTextView
         android:id="@+id/price"
         style="@style/MontserratRegular.MG"
         android:layout_width="wrap_content"

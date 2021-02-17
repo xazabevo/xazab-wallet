@@ -68,7 +68,7 @@ import android.text.Editable;
 import android.text.SpannableStringBuilder;
 import android.text.format.DateUtils;
 
-import static org.dash.wallet.common.Constants.CHAR_THIN_SPACE;
+import static org.xazab.wallet.common.Constants.CHAR_THIN_SPACE;
 
 /**
  * @author Andreas Schildbach

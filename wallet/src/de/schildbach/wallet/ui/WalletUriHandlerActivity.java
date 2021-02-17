@@ -28,8 +28,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import org.bitcoinj.core.Address;
 import org.bitcoinj.wallet.Wallet;
-import org.dash.wallet.common.ui.DialogBuilder;
-import org.dash.wallet.integration.uphold.ui.UpholdSplashActivity;
+import org.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.integration.uphold.ui.UpholdSplashActivity;
 
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;

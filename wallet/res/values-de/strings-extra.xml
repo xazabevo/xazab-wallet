@@ -34,7 +34,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Zur Adresse senden</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Kaufe / Verkaufe Dash</string>
+    <string name="shortcut_buy_sell">Kaufe / Verkaufe Xazab</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Empfangen</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -59,8 +59,8 @@
     <string name="perm_lock_close_app">Schließen</string>
 
     <string name="scan_to_pay_error_dialog_title">Zum Senden scannen</string>
-    <string name="scan_to_pay_error_dialog_message">Keine gültige Dash-Adresse oder URL-Anfrage im Zwischenspeicher:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Keine gültige Dash-Adresse oder URL-Anfrage im Zwischenspeicher.</string>
+    <string name="scan_to_pay_error_dialog_message">Keine gültige Xazab-Adresse oder URL-Anfrage im Zwischenspeicher:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Keine gültige Xazab-Adresse oder URL-Anfrage im Zwischenspeicher.</string>
 
     <string name="receive_title">Empfangen</string>
     <string name="receive_enter_amount_message">Zu empfangenen Betrag festsetzen</string>
@@ -107,14 +107,14 @@
     <string name="export_keys_dialog_title_to_seed">Wiederherstellungsphrase ansehen</string>
     <string name="import_keys_dialog_title_from_seed">Mithilfe der Phrase wiederherstellen</string>
     <string name="backup_to_seed_wallet_dialog_message">Das ist deine Wiederherstellungsphrase. Bitte schreibe diese nieder.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">Lasse niemanden Deine Wiederherstellungsphrase sehen, sonst könnten Deine Dash gestohlen werden.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">Lasse niemanden Deine Wiederherstellungsphrase sehen, sonst könnten Deine Xazab gestohlen werden.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Deine Wallet wird durch einen Zahlungs-PIN gesichert. Gib Deinen PIN ein um Deine Wiederherstellungsphrase zu sehen.</string>
     <string name="import_keys_from_seed_dialog_message">Gib hier deine Wiederherstellungsphrase ein.</string>
     <string name="import_export_keys_dialog_password_phrase">Hier bitte die Wiederherstellungsphrase eingeben.</string>
     <string name="preferences_report_issue_summary">Informationen über das Problem sammeln und an die Entwickler weiterleiten.</string>
     <string name="navigation_configuration">Konfiguration</string>
     <string name="button_copy_address">Adresse kopieren</string>
-    <string name="request_coins_clipboard_address_msg">Dash-Adresse in die Zwischenablage kopiert</string>
+    <string name="request_coins_clipboard_address_msg">Xazab-Adresse in die Zwischenablage kopiert</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Zeigen</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" ist kein Wort aus der Wiederherstellungs-Wortfolge</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Wiederherstellungs-Wortfolge muss 12 Wörter haben</string>
@@ -125,7 +125,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Keine Netzwerk-Gebühr zahlen. Verwende das nur, wenn die Bestätigungszeit für dich nicht relevant ist.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Die App %s möchte auf deinen Master Public Key zugreifen. Dadurch kann deine Wallet eingesehen werden, es können jedoch keine Dash verschoben werden.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Die App %s möchte auf deinen Master Public Key zugreifen. Dadurch kann deine Wallet eingesehen werden, es können jedoch keine Xazab verschoben werden.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Die App %s erfragt eine Adresse, damit du eine Zahlung erhalten kannst. Möchtest du dies autorisieren?</string>
 
@@ -136,7 +136,7 @@
     <string name="wallet_lock_unlock_dialog_title">Entsperre deine Wallet</string>
     <string name="wallet_lock_unlock_dialog_message">Deine Wallet wird durch einen Zahlungs-PIN geschützt. Gib nun den PIN ein und tippe auf Entsperren, um fortzufahren.</string>
     <string name="wallet_lock_reset_wallet_title">Wallet zurücksetzen</string>
-    <string name="wallet_lock_reset_wallet_message">Bist du sicher? Die Wallet wird gelöscht und der Inhalt wird verloren gehen.\n\nDie Dash können danach nur noch über eine Backup-Datei oder eine Wiederherstellungsphrase wiederhergestellt werden.</string>
+    <string name="wallet_lock_reset_wallet_message">Bist du sicher? Die Wallet wird gelöscht und der Inhalt wird verloren gehen.\n\nDie Xazab können danach nur noch über eine Backup-Datei oder eine Wiederherstellungsphrase wiederhergestellt werden.</string>
 
     <string name="wallet_lock_wallet_disabled">Wallet deaktiviert</string>
     <string name="wallet_lock_try_again">Versuches es wieder in %1$d %2$s</string>
@@ -232,7 +232,7 @@
     <string name="authenticate_switch_to_fingerprint">Fingerabdruck verwenden</string>
     <string name="authenticate_switch_to_pin">PIN verwenden</string>
 
-    <string name="menu_buy_and_sell_title">Kaufe &amp; Verkaufe Dash</string>
+    <string name="menu_buy_and_sell_title">Kaufe &amp; Verkaufe Xazab</string>
     <string name="menu_buy_and_sell_subtitle">Mit Drittanbieter-Börsen verknüpfen</string>
     <string name="menu_security_title">Sicherheit</string>
     <string name="menu_security_subtitle">Passphrase anzeigen, Wallet sichern...</string>
@@ -253,9 +253,9 @@
     <string name="about_review_and_rate">Rezensiere &amp; bewerte die App</string>
     <string name="about_contact_support">Support kontaktieren</string>
     <string name="about_fork_disclaimer">Dies ist eine Open Source App, die von der Bitcoin Wallet geforked wurde</string>
-    <string name="about_copyright">Copyright © 2020 Dash Core</string>
+    <string name="about_copyright">Copyright © 2020 Xazab Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Xazab Wallet %s</string>
 
     <string name="block">Block</string>
     <string name="time">Zeit</string>
@@ -263,7 +263,7 @@
     <string name="block_info">Block-Info</string>
 
     <string name="scan_private_key">Private Key scannen</string>
-    <string name="scan_private_key_intro_1">Du bist im Betreff, Guthaben von einer Dash Paper Wallet zu transferieren.</string>
+    <string name="scan_private_key_intro_1">Du bist im Betreff, Guthaben von einer Xazab Paper Wallet zu transferieren.</string>
     <string name="scan_private_key_intro_2">Hierdurch werden alle Coins von dieser Wallet an die Wallet auf deinem Gerät versandt.</string>
     <string name="scan_private_key_intro_3">Sobald die Transaktion bestätigt ist, ist die andere Wallet wertlos und sollte aus Sicherheitsgründen nicht wieder verwendet werden.</string>
     <string name="confirm">Bestätigen</string>
@@ -308,7 +308,7 @@
 
     <string name="sync_status_wait">Bitte bis zum Ende der Synchronisierung warten</string>
     <string name="sync_status_syncing_title">Synchronisiere</string>
-    <string name="sync_status_syncing_sub_title">mit der Dash-Blockchain</string>
+    <string name="sync_status_syncing_sub_title">mit der Xazab-Blockchain</string>
     <string name="sync_status_unable_to_connect">Verbindung fehlgeschlagen</string>
     <string name="sync_status_check_connection">Verbindung überprüfen</string>
     <string name="sync_status_sync_title">Synchronisiere</string>

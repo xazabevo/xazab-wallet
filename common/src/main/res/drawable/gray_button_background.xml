@@ -3,13 +3,13 @@
     <item android:state_enabled="false">
         <shape android:shape="rectangle">
             <corners android:radius="10dp" />
-            <solid android:color="@color/dash_light_gray" />
+            <solid android:color="@color/xazab_light_gray" />
         </shape>
     </item>
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="10dp" />
-            <solid android:color="@color/dash_light_gray" />
+            <solid android:color="@color/xazab_light_gray" />
         </shape>
     </item>
     <item>
@@ -17,7 +17,7 @@
             <!-- Bottom/Right 3px Shadow -->
             <item>
                 <shape android:shape="rectangle">
-                    <solid android:color="@color/dash_light_gray" />
+                    <solid android:color="@color/xazab_light_gray" />
                     <corners android:radius="10dp" />
                 </shape>
             </item>
@@ -26,7 +26,7 @@
                 android:right="3px">
                 <shape android:shape="rectangle">
                     <corners android:radius="10dp" />
-                    <solid android:color="@color/dash_light_gray" />
+                    <solid android:color="@color/xazab_light_gray" />
                 </shape>
             </item>
         </layer-list>

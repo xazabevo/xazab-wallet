@@ -12,10 +12,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/dash_lighter_gray"
+        android:background="@color/xazab_lighter_gray"
         app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:titleTextColor="@color/dash_black" />
+        app:titleTextColor="@color/xazab_black" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
@@ -27,7 +27,7 @@
         app:tabIndicatorHeight="0dp"
         app:tabSelectedTextColor="@color/white"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-        app:tabTextColor="@color/dash_blue">
+        app:tabTextColor="@color/xazab_blue">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"

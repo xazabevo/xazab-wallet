@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ import org.bitcoinj.core.Transaction
 import org.bitcoinj.protocols.payments.PaymentProtocolException
 import org.bitcoinj.utils.MonetaryFormat
 import org.bitcoinj.wallet.SendRequest
-import org.dash.wallet.common.util.GenericUtils
+import org.xazab.wallet.common.util.GenericUtils
 import org.slf4j.LoggerFactory
 
 class PaymentProtocolFragment : Fragment() {

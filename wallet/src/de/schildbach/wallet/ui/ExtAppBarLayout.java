@@ -18,7 +18,7 @@ import de.schildbach.wallet_test.R;
  */
 public class ExtAppBarLayout extends AppBarLayout {
 
-    private static final String DASH_WEBPAGE_URL = "http://www.dash.org";
+    private static final String XAZAB_WEBPAGE_URL = "http://www.xazab.xyz";
 
     private View toolbarLogoView;
 
@@ -46,7 +46,7 @@ public class ExtAppBarLayout extends AppBarLayout {
             @Override
             public void onClick(View v) {
                 blinkViews(toolbarLogoView);
-                openUrl(DASH_WEBPAGE_URL);
+                openUrl(XAZAB_WEBPAGE_URL);
             }
         });
     }

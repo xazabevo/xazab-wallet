@@ -21,7 +21,7 @@ import java.util.Set;
 
 import javax.annotation.Nullable;
 
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet_test.R;
 

@@ -20,7 +20,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:background="@color/dash_white">
+            android:background="@color/xazab_white">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:padding="8dp"
                         android:text="@string/authenticate_pin_message"
-                        android:textColor="@color/dash_gray" />
+                        android:textColor="@color/xazab_gray" />
 
                     <ViewSwitcher
                         android:id="@+id/pin_progress_switcher"
@@ -106,7 +106,7 @@
         android:id="@+id/numeric_keyboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/dash_white"
+        android:background="@color/xazab_white"
         android:padding="16dp"
         android:stretchColumns="*" />
 

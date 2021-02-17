@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/touch_fingerprint_sensor"
-            android:textColor="@color/dash_gray" />
+            android:textColor="@color/xazab_gray" />
 
     </LinearLayout>
 
@@ -38,7 +38,7 @@
         android:layout_marginLeft="12dp"
         android:layout_marginTop="12dp"
         android:text="@string/unlock_with_fingerprint"
-        android:textColor="@color/dash_gray"
+        android:textColor="@color/xazab_gray"
         android:visibility="gone"
         tools:visibility="visible" />
 

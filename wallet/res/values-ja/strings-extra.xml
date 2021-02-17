@@ -34,7 +34,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">アドレスへ送金する</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Dashを買う/売る</string>
+    <string name="shortcut_buy_sell">Xazabを買う/売る</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">入金</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -59,8 +59,8 @@
     <string name="perm_lock_close_app">閉じる</string>
 
     <string name="scan_to_pay_error_dialog_title">スキャンして送金する</string>
-    <string name="scan_to_pay_error_dialog_message">クリップボードのDashアドレスやURLリクエストは無効です:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">クリップボードのDashアドレスやURLリクエストは無効です</string>
+    <string name="scan_to_pay_error_dialog_message">クリップボードのXazabアドレスやURLリクエストは無効です:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">クリップボードのXazabアドレスやURLリクエストは無効です</string>
 
     <string name="receive_title">入金</string>
     <string name="receive_enter_amount_message">受け取る金額を指定してください</string>
@@ -107,14 +107,14 @@
     <string name="export_keys_dialog_title_to_seed">復元フレーズを表示する</string>
     <string name="import_keys_dialog_title_from_seed">復元フレーズでウォレットを復元する</string>
     <string name="backup_to_seed_wallet_dialog_message">これはあなたの復元フレーズです。ペンで書き留めてください。</string>
-    <string name="backup_wallet_to_seed_dialog_warning">復元フレーズは絶対に誰にも見せないで下さい！復元フレーズを知られると、あなたのDashは簡単に盗まれます。</string>
+    <string name="backup_wallet_to_seed_dialog_warning">復元フレーズは絶対に誰にも見せないで下さい！復元フレーズを知られると、あなたのXazabは簡単に盗まれます。</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">あなたのウォレットは送金用PINコードで保護されています。 PINを入力して［表示］を押すと、復元フレーズが表示されます。</string>
     <string name="import_keys_from_seed_dialog_message">あなたの復元フレーズをここに入力して下さい。</string>
     <string name="import_export_keys_dialog_password_phrase">ここに復元フレーズを入力</string>
     <string name="preferences_report_issue_summary">問題に関する情報を収集し、開発者へメールで報告する。</string>
     <string name="navigation_configuration">設定</string>
     <string name="button_copy_address">アドレスをコピーする</string>
-    <string name="request_coins_clipboard_address_msg">Dashアドレスがクリップボードにコピーされました</string>
+    <string name="request_coins_clipboard_address_msg">Xazabアドレスがクリップボードにコピーされました</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">表示</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" は復元フレーズのワードではありません</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">復元フレーズは12ワードなくてはいけません。</string>
@@ -125,7 +125,7 @@
     <string name="send_coins_fragment_hint_fee_zero">手数料は支払われません。承認時間を気にされない場合のみ「手数料無料」をお使いください。</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg"> %sというアプリがあなたのマスターパブリックキーを要求しています。これはあなたのウォレットの記録を取るために使用されます。あなたのDashが勝手に送金されることはありません。</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg"> %sというアプリがあなたのマスターパブリックキーを要求しています。これはあなたのウォレットの記録を取るために使用されます。あなたのXazabが勝手に送金されることはありません。</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">%sというアプリがあなたに支払いをするためにアドレスを要求していますが、認可しますか？ </string>
 
@@ -136,7 +136,7 @@
     <string name="wallet_lock_unlock_dialog_title">あなたのウォレットのロックを解除する</string>
     <string name="wallet_lock_unlock_dialog_message">あなたのウォレットは送金用PINコードで保護されています。 PINを入力してロック解除を押すと次へ進めます。</string>
     <string name="wallet_lock_reset_wallet_title">ウォレットをリセットする</string>
-    <string name="wallet_lock_reset_wallet_message">本気ですか？ウォレットは削除され全てのDashが失われます。\n\nDashを復元する唯一の方法はバックアップファイル又は復元フレーズの使用です。</string>
+    <string name="wallet_lock_reset_wallet_message">本気ですか？ウォレットは削除され全てのXazabが失われます。\n\nXazabを復元する唯一の方法はバックアップファイル又は復元フレーズの使用です。</string>
 
     <string name="wallet_lock_wallet_disabled">ウォレットは機能停止しています</string>
     <string name="wallet_lock_try_again">もう一度 %1$d %2$sにてお試しください。</string>
@@ -199,7 +199,7 @@
     <string name="verify_it_is_important_subtitle">これからあなたのウォレットの秘密鍵を表示します</string>
     <string name="verify_info_text_1">この復元フレーズがあれば、このウォレットの中の資金へのアクセスできます</string>
     <string name="verify_info_text_2">この復元フレーズは保存されません</string>
-    <string name="verify_info_text_3">この端末を紛失したり故障した場合やこの端末からDashウォレットを
+    <string name="verify_info_text_3">この端末を紛失したり故障した場合やこの端末からXazabウォレットを
 誤まってアンインストールしてしまった場合に、あなたの資金にアクセス
 するためには、この復元フレーズが必要となります。</string>
     <string name="verify_skip">スキップする</string>
@@ -234,7 +234,7 @@
     <string name="authenticate_switch_to_fingerprint">指紋認証を使う</string>
     <string name="authenticate_switch_to_pin">PINを使う</string>
 
-    <string name="menu_buy_and_sell_title">Dashを買う &amp; 売る</string>
+    <string name="menu_buy_and_sell_title">Xazabを買う &amp; 売る</string>
     <string name="menu_buy_and_sell_subtitle">サードパーティーの取引所に接続する</string>
     <string name="menu_security_title">セキュリティ</string>
     <string name="menu_security_subtitle">パスフレーズを表示して、ウォレットをバックアップ ...</string>
@@ -253,9 +253,9 @@
     <string name="about_review_and_rate">レビュー &amp; アプリを評価する</string>
     <string name="about_contact_support">サポートへ連絡する</string>
     <string name="about_fork_disclaimer">これはビットコインウォレットからフォークしたオープンソースのアプリです</string>
-    <string name="about_copyright">Copyright © 2020 Dash Core</string>
+    <string name="about_copyright">Copyright © 2020 Xazab Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dashウォレット %s</string>
+    <string name="about_version_name">Xazabウォレット %s</string>
 
     <string name="block">ブロック</string>
     <string name="time">時間</string>
@@ -263,7 +263,7 @@
     <string name="block_info">ブロック情報</string>
 
     <string name="scan_private_key">プライベートキーをスキャンする</string>
-    <string name="scan_private_key_intro_1">これからDashのペーパーウォレットから残高を全て送金します</string>
+    <string name="scan_private_key_intro_1">これからXazabのペーパーウォレットから残高を全て送金します</string>
     <string name="scan_private_key_intro_2">これによって全てのコインがそのウォレットからこの端末のウォレットに移動します</string>
     <string name="scan_private_key_intro_3">この取引が確定したら、他のウォレットは
 無価値となり、安全上の理由から再び
@@ -310,7 +310,7 @@
 
     <string name="sync_status_wait">同期が完了するまでお待ちください</string>
     <string name="sync_status_syncing_title">同期中</string>
-    <string name="sync_status_syncing_sub_title">Dashのブロックチェーンで</string>
+    <string name="sync_status_syncing_sub_title">Xazabのブロックチェーンで</string>
     <string name="sync_status_unable_to_connect">接続できません</string>
     <string name="sync_status_check_connection">接続を確認してください</string>
     <string name="sync_status_sync_title">同期</string>

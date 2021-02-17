@@ -38,7 +38,7 @@
             style="@style/MontserratMedium.MenuRowTitle.Internal"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:textColor="@color/dash_blue"
+            android:textColor="@color/xazab_blue"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView2"
@@ -65,7 +65,7 @@
         style="@style/MenuRow.Internal">
 
         <TextView
-            android:id="@+id/buy_dash_title"
+            android:id="@+id/buy_xazab_title"
             style="@style/MontserratMedium.MenuRowTitle.Internal"
             android:text="@string/about_title"
             app:layout_constraintBottom_toBottomOf="parent"

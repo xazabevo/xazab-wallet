@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,9 +29,9 @@ import kotlinx.android.synthetic.main.dialog_receive_details.*
 import org.bitcoinj.core.Coin
 import org.bitcoinj.utils.Fiat
 import org.bitcoinj.utils.MonetaryFormat
-import org.dash.wallet.common.util.GenericUtils
+import org.xazab.wallet.common.util.GenericUtils
 
-private const val ARG_DASH_AMOUNT = "arg_dash_amount"
+private const val ARG_XAZAB_AMOUNT = "arg_xazab_amount"
 private const val ARG_FIAT_AMOUNT = "arg_fiat_amount"
 
 class ReceiveDetailsDialog : BaseBottomSheetDialogFragment() {
@@ -39,10 +39,10 @@ class ReceiveDetailsDialog : BaseBottomSheetDialogFragment() {
     companion object {
 
         @JvmStatic
-        fun createDialog(dashAmount: Coin, fiatAmount: Fiat?): DialogFragment {
+        fun createDialog(xazabAmount: Coin, fiatAmount: Fiat?): DialogFragment {
             val dialog = ReceiveDetailsDialog()
             val bundle = Bundle()
-            bundle.putSerializable(ARG_DASH_AMOUNT, dashAmount)
+            bundle.putSerializable(ARG_XAZAB_AMOUNT, xazabAmount)
             bundle.putSerializable(ARG_FIAT_AMOUNT, fiatAmount)
             dialog.arguments = bundle
             return dialog
@@ -56,11 +56,11 @@ class ReceiveDetailsDialog : BaseBottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         arguments!!.apply {
-            val dashAmount = getSerializable(ARG_DASH_AMOUNT) as Coin
+            val xazabAmount = getSerializable(ARG_XAZAB_AMOUNT) as Coin
             val fiatAmount = getSerializable(ARG_FIAT_AMOUNT) as Fiat?
 
-            receive_info.amount = dashAmount
-            input_value.text = MonetaryFormat.BTC.noCode().format(dashAmount).toString()
+            receive_info.amount = xazabAmount
+            input_value.text = MonetaryFormat.BTC.noCode().format(xazabAmount).toString()
             if (fiatAmount != null) {
                 fiat_symbol.text = GenericUtils.currencySymbol(fiatAmount.currencyCode)
                 fiat_value.text = fiatAmount.toPlainString()

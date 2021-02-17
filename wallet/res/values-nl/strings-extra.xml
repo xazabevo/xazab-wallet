@@ -34,7 +34,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Versturen naar adres</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Koop / verkoop Dash</string>
+    <string name="shortcut_buy_sell">Koop / verkoop Xazab</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Ontvang</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -59,8 +59,8 @@
     <string name="perm_lock_close_app">Sluiten</string>
 
     <string name="scan_to_pay_error_dialog_title">Scan om te verzenden</string>
-    <string name="scan_to_pay_error_dialog_message">Geen geldig Dash adres of URL verzoek op klembord:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Geen geldig Dash adres of URL verzoek op klembord.</string>
+    <string name="scan_to_pay_error_dialog_message">Geen geldig Xazab adres of URL verzoek op klembord:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Geen geldig Xazab adres of URL verzoek op klembord.</string>
 
     <string name="receive_title">Ontvangen</string>
     <string name="receive_enter_amount_message">Specificeer het te ontvangen bedrag</string>
@@ -110,14 +110,14 @@
     <string name="export_keys_dialog_title_to_seed">Toon herstelzin</string>
     <string name="import_keys_dialog_title_from_seed">Herstel met herstelzin</string>
     <string name="backup_to_seed_wallet_dialog_message">Dit is je herstelzin. Schrijf deze a.u.b. op.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">Laat NIEMAND je herstelzin zien, anders kunnen anderen je Dash uitgeven.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">Laat NIEMAND je herstelzin zien, anders kunnen anderen je Xazab uitgeven.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Betalingen vanuit je portemonnee zijn beschermd met een pin. Voer je pin in en kies Toon om je herstelzin te bekijken.</string>
     <string name="import_keys_from_seed_dialog_message">Voer je herstelzin hier in.</string>
     <string name="import_export_keys_dialog_password_phrase">Voer hier je herstelzin in.</string>
     <string name="preferences_report_issue_summary">Vergaar informatie over uw probleem en verstuur via e-mail een melding aan de ontwikkelaars.</string>
     <string name="navigation_configuration">Configuratie</string>
     <string name="button_copy_address">Kopieer adres</string>
-    <string name="request_coins_clipboard_address_msg">Dash-adres is gekopieerd naar het klembord</string>
+    <string name="request_coins_clipboard_address_msg">Xazab-adres is gekopieerd naar het klembord</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Toon</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" is geen herstelzinwoord</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">Herstelzin moet 12 woorden hebben</string>
@@ -128,7 +128,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Geen kosten zullen worden betaald. Gebruik \'geen kosten\' alleen als de bevestigingstijd niet van belang is.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">Applicatie %s wil je Master Public Key verkrijgen. Deze kan worden gebruikt om je portemonnee te volgen, maar kan niet gebruikt worden om Dash over te maken.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">Applicatie %s wil je Master Public Key verkrijgen. Deze kan worden gebruikt om je portemonnee te volgen, maar kan niet gebruikt worden om Xazab over te maken.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">Applicatie %s verzoekt een adres om je op te betalen. Wil je dit autoriseren?</string>
 
@@ -139,7 +139,7 @@
     <string name="wallet_lock_unlock_dialog_title">Ontgrendel je portemonnee</string>
     <string name="wallet_lock_unlock_dialog_message">Betalingen vanuit je portemonnee zijn beschermd met een pin. Voer je pin in en kies Ontgrendel om verder te gaan.</string>
     <string name="wallet_lock_reset_wallet_title">Portemonnee resetten</string>
-    <string name="wallet_lock_reset_wallet_message">Weet je het zeker? Je portemonnee wordt verwijderd en al je Dash gaat verloren.\n\nDe enige manier om je Dash te herstellen is met een backup bestand of herstelzin.</string>
+    <string name="wallet_lock_reset_wallet_message">Weet je het zeker? Je portemonnee wordt verwijderd en al je Xazab gaat verloren.\n\nDe enige manier om je Xazab te herstellen is met een backup bestand of herstelzin.</string>
 
     <string name="wallet_lock_wallet_disabled">Portemonnee uitgeschakeld</string>
     <string name="wallet_lock_try_again">Probeer nogmaals over %1$d %2$s</string>
@@ -205,10 +205,10 @@
     <string name="verify_it_is_important_subtitle">We gaan u de geheime sleutel van uw portemonnee laten zien.</string>
     <string name="verify_info_text_1">Deze herstelzin is uw toegang tot het saldo in deze portemonnee.</string>
     <string name="verify_info_text_2">We slaan deze herstelzin niet op.</string>
-    <string name="verify_info_text_3">U hebt deze herstelzin nodig om toegang te krijgen tot uw saldo als dit apparaat is verloren of beschadigd, of als Dash Wallet ooit per ongeluk van dit apparaat wordt verwijderd.</string>
+    <string name="verify_info_text_3">U hebt deze herstelzin nodig om toegang te krijgen tot uw saldo als dit apparaat is verloren of beschadigd, of als Xazab Wallet ooit per ongeluk van dit apparaat wordt verwijderd.</string>
     <string name="verify_skip">Overslaan</string>
     <string name="verify_secure_now_btn">Beveilig nu</string>
-    <string name="verify_secure_now_message">Als u dit apparaat verliest, verliest u uw Dash. Download de herstelzin zodat u uw portemonnee op een ander apparaat kunt herstellen.</string>
+    <string name="verify_secure_now_message">Als u dit apparaat verliest, verliest u uw Xazab. Download de herstelzin zodat u uw portemonnee op een ander apparaat kunt herstellen.</string>
     <string name="verify_seed_title">schrijf het alsjeblieft op</string>
     <string name="verify_seed_write_down_confirmation">ik heb het opgeschreven</string>
     <string name="verify_seed_buttons_tip">Tik op de woorden van uw herstelzin in de juiste volgorde</string>
@@ -235,7 +235,7 @@
     <string name="authenticate_switch_to_fingerprint">Vingerafdruk gebruiken</string>
     <string name="authenticate_switch_to_pin">gebruik PIN</string>
 
-    <string name="menu_buy_and_sell_title">Koop &amp; verkoop Dash</string>
+    <string name="menu_buy_and_sell_title">Koop &amp; verkoop Xazab</string>
     <string name="menu_buy_and_sell_subtitle">Verbind met beurzen van derden</string>
     <string name="menu_security_title">Beveiliging</string>
     <string name="menu_security_subtitle">Bekijk wachtwoord, maak backup portemonnee ...</string>
@@ -256,9 +256,9 @@
     <string name="about_review_and_rate">Schrijf een recensie &amp; Beoordeel de app</string>
     <string name="about_contact_support">Neem contact op</string>
     <string name="about_fork_disclaimer">Dit is een open source app afgesplitst van de Bitcoin portemonnee</string>
-    <string name="about_copyright">Copyright © 2020 Dash Core</string>
+    <string name="about_copyright">Copyright © 2020 Xazab Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash portemonnee%s</string>
+    <string name="about_version_name">Xazab portemonnee%s</string>
 
     <string name="block">Block</string>
     <string name="time">Tijd</string>
@@ -266,7 +266,7 @@
     <string name="block_info">Block info</string>
 
     <string name="scan_private_key">Scan persoonlijke sleutel</string>
-    <string name="scan_private_key_intro_1">U staat op het punt het saldo van een papieren Dash portemonnee op te nemen.</string>
+    <string name="scan_private_key_intro_1">U staat op het punt het saldo van een papieren Xazab portemonnee op te nemen.</string>
     <string name="scan_private_key_intro_2">Hiermee worden het saldo van die portemonnee naar uw portemonnee op dit apparaat verplaatst.</string>
     <string name="scan_private_key_intro_3">Wanneer de transactie is bevestigd, is de andere portemonnee waardeloos en mag deze om veiligheidsredenen niet opnieuw worden gebruikt.</string>
     <string name="confirm">Bevestig</string>
@@ -311,7 +311,7 @@
 
     <string name="sync_status_wait">Wacht tot de synchronisatie is voltooid</string>
     <string name="sync_status_syncing_title">Aan het synchroniseren</string>
-    <string name="sync_status_syncing_sub_title">met Dash blockchain</string>
+    <string name="sync_status_syncing_sub_title">met Xazab blockchain</string>
     <string name="sync_status_unable_to_connect">Kan geen verbinding maken</string>
     <string name="sync_status_check_connection">Controleer je verbinding</string>
     <string name="sync_status_sync_title">Sync</string>

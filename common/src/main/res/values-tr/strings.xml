@@ -3,7 +3,7 @@
 
     <string name="loading">Yükleniyor...</string>
     <string name="loading_error">Bir hata oluştu. Lütfen tekrar deneyin.</string>
-    <string name="dash_available">%1$s mevcut</string>
+    <string name="xazab_available">%1$s mevcut</string>
 
     <!-- Local Currency List: GGP -->
     <string name="currency_GGP">Guernsey Lirası</string>

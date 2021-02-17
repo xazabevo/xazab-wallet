@@ -6,5 +6,5 @@
         android:topLeftRadius="4dp" />
     <stroke
         android:width="1dp"
-        android:color="@color/dash_blue" />
+        android:color="@color/xazab_blue" />
 </shape>

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ import de.schildbach.wallet.ui.security.SecurityGuard
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_onboarding.*
 import kotlinx.android.synthetic.main.activity_onboarding_perm_lock.*
-import org.dash.wallet.common.ui.DialogBuilder
+import org.xazab.wallet.common.ui.DialogBuilder
 
 private const val REGULAR_FLOW_TUTORIAL_REQUEST_CODE = 0
 

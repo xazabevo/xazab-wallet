@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,11 +34,11 @@ import de.schildbach.wallet.ui.send.EnterAmountSharedViewModel
 import de.schildbach.wallet_test.R
 import org.bitcoinj.core.Coin
 import org.bitcoinj.utils.MonetaryFormat
-import org.dash.wallet.common.InteractionAwareActivity
-import org.dash.wallet.common.util.GenericUtils
-import org.dash.wallet.integration.uphold.data.UpholdTransaction
-import org.dash.wallet.integration.uphold.ui.UpholdWithdrawalHelper
-import org.dash.wallet.integration.uphold.ui.UpholdWithdrawalHelper.OnTransferListener
+import org.xazab.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.util.GenericUtils
+import org.xazab.wallet.integration.uphold.data.UpholdTransaction
+import org.xazab.wallet.integration.uphold.ui.UpholdWithdrawalHelper
+import org.xazab.wallet.integration.uphold.ui.UpholdWithdrawalHelper.OnTransferListener
 import java.math.BigDecimal
 
 class UpholdTransferActivity : InteractionAwareActivity() {
@@ -89,28 +89,28 @@ class UpholdTransferActivity : InteractionAwareActivity() {
         val balanceStr = intent.getStringExtra(EXTRA_MAX_AMOUNT)
         balance = Coin.parseCoin(balanceStr)
 
-        val drawableDash = ResourcesCompat.getDrawable(resources, R.drawable.ic_dash_d_black, null)
-        drawableDash!!.setBounds(0, 0, 38, 38)
-        val dashSymbol = ImageSpan(drawableDash, ImageSpan.ALIGN_BASELINE)
+        val drawableXazab = ResourcesCompat.getDrawable(resources, R.drawable.ic_xazab_d_black, null)
+        drawableXazab!!.setBounds(0, 0, 38, 38)
+        val xazabSymbol = ImageSpan(drawableXazab, ImageSpan.ALIGN_BASELINE)
         val builder = SpannableStringBuilder()
         builder.appendln(intent.getStringExtra(EXTRA_MESSAGE))
         builder.append("  ")
-        builder.setSpan(dashSymbol, builder.length - 2, builder.length - 1, 0)
-        val dashFormat = MonetaryFormat().noCode().minDecimals(6).optionalDecimals()
-        builder.append(dashFormat.format(balance))
+        builder.setSpan(xazabSymbol, builder.length - 2, builder.length - 1, 0)
+        val xazabFormat = MonetaryFormat().noCode().minDecimals(6).optionalDecimals()
+        builder.append(xazabFormat.format(balance))
         builder.append("  ")
         builder.append(getText(R.string.enter_amount_available))
 
         enterAmountSharedViewModel.messageTextStringData.value = SpannableString.valueOf(builder)
         enterAmountSharedViewModel.buttonClickEvent.observe(this, Observer {
-            val dashAmount = enterAmountSharedViewModel.dashAmount
-            showPaymentConfirmation(dashAmount)
+            val xazabAmount = enterAmountSharedViewModel.xazabAmount
+            showPaymentConfirmation(xazabAmount)
         })
         enterAmountSharedViewModel.maxButtonVisibleData.value = true
         enterAmountSharedViewModel.maxButtonClickEvent.observe(this, Observer<Boolean?> {
             enterAmountSharedViewModel.applyMaxAmountEvent.setValue(balance)
         })
-        enterAmountSharedViewModel.dashAmountData.observe(this, Observer<Coin> {
+        enterAmountSharedViewModel.xazabAmountData.observe(this, Observer<Coin> {
             enterAmountSharedViewModel.buttonEnabledData.setValue(it.isPositive)
         })
         val confirmTransactionSharedViewModel: SingleActionSharedViewModel = ViewModelProviders.of(this).get(SingleActionSharedViewModel::class.java)

@@ -14,19 +14,19 @@
             <item android:state_enabled="false">
                 <shape android:shape="rectangle">
                     <corners android:radius="10dp" />
-                    <solid android:color="@color/dash_light_gray" />
+                    <solid android:color="@color/xazab_light_gray" />
                     <stroke
                         android:width="2dp"
-                        android:color="@color/dash_blue" />
+                        android:color="@color/xazab_blue" />
                 </shape>
             </item>
             <item>
                 <shape android:shape="rectangle">
                     <corners android:radius="10dp" />
-                    <solid android:color="@color/dash_white" />
+                    <solid android:color="@color/xazab_white" />
                     <stroke
                         android:width="2dp"
-                        android:color="@color/dash_blue" />
+                        android:color="@color/xazab_blue" />
                 </shape>
             </item>
 

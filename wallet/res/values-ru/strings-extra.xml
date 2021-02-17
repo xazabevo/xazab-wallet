@@ -59,8 +59,8 @@
     <string name="perm_lock_close_app">Закрыть</string>
 
     <string name="scan_to_pay_error_dialog_title">Сканировать</string>
-    <string name="scan_to_pay_error_dialog_message">Некорректный адрес Dash или URL запрос в буфере обмена:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Некорректный адрес Dash или URL запрос в буфере обмена.</string>
+    <string name="scan_to_pay_error_dialog_message">Некорректный адрес Xazab или URL запрос в буфере обмена:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Некорректный адрес Xazab или URL запрос в буфере обмена.</string>
 
     <string name="receive_title">Получить</string>
     <string name="receive_enter_amount_message">Введите сумму для получения</string>
@@ -136,7 +136,7 @@
     <string name="wallet_lock_unlock_dialog_title">Открыть ваш кошелёк</string>
     <string name="wallet_lock_unlock_dialog_message">Ваш кошелёк защищён ПИН-кодом. Введите свой ПИН-код и нажмите "Открыть".</string>
     <string name="wallet_lock_reset_wallet_title">Сброс кошелька</string>
-    <string name="wallet_lock_reset_wallet_message">Вы уверены? Ваш кошелёк будет удалён, а доступ к средствам утерян.\n\nВаш кошелёк Dash можно будет восстановить только с помощью файла восстановления или фразы восстановления.</string>
+    <string name="wallet_lock_reset_wallet_message">Вы уверены? Ваш кошелёк будет удалён, а доступ к средствам утерян.\n\nВаш кошелёк Xazab можно будет восстановить только с помощью файла восстановления или фразы восстановления.</string>
 
     <string name="wallet_lock_wallet_disabled">Кошелёк отключён</string>
     <string name="wallet_lock_try_again">Попробуйте снова через %1$d%2$s</string>
@@ -208,7 +208,7 @@
     <string name="verify_it_is_important_subtitle">Сейчас мы покажем секретный ключ к Вашему кошельку.</string>
     <string name="verify_info_text_1">Эта фраза восстановления - Ваш доступ к средствам на этом кошельке.</string>
     <string name="verify_info_text_2">Мы не храним эту фразу восстановления.</string>
-    <string name="verify_info_text_3">Вам понадобится эта фраза восстановления для доступа к Вашим средствам, если это устройство будет утеряно, повреждено или приложение Dash Wallet будет случайно удалено.</string>
+    <string name="verify_info_text_3">Вам понадобится эта фраза восстановления для доступа к Вашим средствам, если это устройство будет утеряно, повреждено или приложение Xazab Wallet будет случайно удалено.</string>
     <string name="verify_skip">Пропустить</string>
     <string name="verify_secure_now_btn">Сохранить кошелек</string>
     <string name="verify_secure_now_message">Если Вы потеряете это устройство, то Вы потеряете доступ к Вашим средствам. Сохраните Вашу фразу восстановления, чтобы иметь возможность восстановить кошелек на другом устройстве.</string>
@@ -238,7 +238,7 @@
     <string name="authenticate_switch_to_fingerprint">Использовать отпечаток пальца</string>
     <string name="authenticate_switch_to_pin">Используйте PIN-код</string>
 
-    <string name="menu_buy_and_sell_title">Купить &amp; Продать Dash</string>
+    <string name="menu_buy_and_sell_title">Купить &amp; Продать Xazab</string>
     <string name="menu_buy_and_sell_subtitle">Подключиться к сторонним биржам</string>
     <string name="menu_security_title">Безопасность</string>
     <string name="menu_security_subtitle">Показать кодовую фразу, сделать резервную копию кошелька...</string>
@@ -259,9 +259,9 @@
     <string name="about_review_and_rate">Оставить отзыв &amp; Оценить приложение</string>
     <string name="about_contact_support">Связаться с поддержкой</string>
     <string name="about_fork_disclaimer">Это приложение с открытым кодом, основанное на Bitcoin Wallet</string>
-    <string name="about_copyright">Copyright © 2020 Dash Core</string>
+    <string name="about_copyright">Copyright © 2020 Xazab Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Xazab Wallet %s</string>
 
     <string name="block">Блок</string>
     <string name="time">Время</string>
@@ -269,7 +269,7 @@
     <string name="block_info">Информация о блоке</string>
 
     <string name="scan_private_key">Сканировать приватный ключ</string>
-    <string name="scan_private_key_intro_1">Вы собираетесь перенести все средства из другого кошелька Dash.</string>
+    <string name="scan_private_key_intro_1">Вы собираетесь перенести все средства из другого кошелька Xazab.</string>
     <string name="scan_private_key_intro_2">Все средства будут перемещены на Ваш кошелёк на этом устройстве.</string>
     <string name="scan_private_key_intro_3">Когда эта транзакция будет подтверждена, кошелёк будет бесполезен и не должен быть повторно использован в целях безопасности.</string>
     <string name="confirm">Подтвердить</string>
@@ -314,7 +314,7 @@
 
     <string name="sync_status_wait">Пожалуйста, подождите завершения синхронизации</string>
     <string name="sync_status_syncing_title">Синхронизация</string>
-    <string name="sync_status_syncing_sub_title">с Dash блокчейн</string>
+    <string name="sync_status_syncing_sub_title">с Xazab блокчейн</string>
     <string name="sync_status_unable_to_connect">Не удалось подключиться</string>
     <string name="sync_status_check_connection">Проверьте ваше интернет-соединение</string>
     <string name="sync_status_sync_title">Синхронизация</string>

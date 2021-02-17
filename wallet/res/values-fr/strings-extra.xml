@@ -34,7 +34,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Envoyer à l\'adresse</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Acheter/vendre des dashs</string>
+    <string name="shortcut_buy_sell">Acheter/vendre des xazabs</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Recevoir</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -59,8 +59,8 @@
     <string name="perm_lock_close_app">Fermer</string>
 
     <string name="scan_to_pay_error_dialog_title">Scanner pour envoyer</string>
-    <string name="scan_to_pay_error_dialog_message">Adresse Dash invalide, ou URL de requête dans le presse-papiers invalide :\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Le presse-papiers ne contient pas d\'adresse Dash valide ni d\'URL de requête valide.</string>
+    <string name="scan_to_pay_error_dialog_message">Adresse Xazab invalide, ou URL de requête dans le presse-papiers invalide :\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Le presse-papiers ne contient pas d\'adresse Xazab valide ni d\'URL de requête valide.</string>
 
     <string name="receive_title">Recevoir</string>
     <string name="receive_enter_amount_message">Indiquez le montant à recevoir</string>
@@ -107,14 +107,14 @@
     <string name="export_keys_dialog_title_to_seed">Voir la phrase de récupération</string>
     <string name="import_keys_dialog_title_from_seed">Restaurer avec la phrase de récupération</string>
     <string name="backup_to_seed_wallet_dialog_message">Ceci est votre phrase de récupération. S\'il vous plaît écrivez-le.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">Ne laissez PERSONNE voir votre phrase de récupération. Quelqu\'un qui la connaîtrait pourrait dépenser vos dashs.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">Ne laissez PERSONNE voir votre phrase de récupération. Quelqu\'un qui la connaîtrait pourrait dépenser vos xazabs.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Votre portefeuille est protégé par un code PIN de dépenses. Entrez votre code PIN et appuyez sur Afficher pour afficher votre phrase de récupération.</string>
     <string name="import_keys_from_seed_dialog_message">Entrez votre phrase de récupération ici.</string>
     <string name="import_export_keys_dialog_password_phrase">La phrase de récupération va ici.</string>
     <string name="preferences_report_issue_summary">Collectez informations de votre problème et email aux développeurs.</string>
     <string name="navigation_configuration">Configuration</string>
     <string name="button_copy_address">Copiez addrese</string>
-    <string name="request_coins_clipboard_address_msg">Adresse Dash copiée dans le presse-papiers</string>
+    <string name="request_coins_clipboard_address_msg">Adresse Xazab copiée dans le presse-papiers</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Afficher </string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" n\'est pas un mot de phrase de récupération</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">La phrase de récupération doit avoir 12 mots</string>
@@ -125,7 +125,7 @@
     <string name="send_coins_fragment_hint_fee_zero">Aucuns frais ne seront payés. Utilisez “Sans frais” si le temps de confirmation ne vous importe pas.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">L\'application %s souhaiterait recevoir votre clé publique maîtresse. Elle peut être utilisée pour suivre l\'évolution de votre portefeuille, mais pas pour déplacer vos fonds Dash.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">L\'application %s souhaiterait recevoir votre clé publique maîtresse. Elle peut être utilisée pour suivre l\'évolution de votre portefeuille, mais pas pour déplacer vos fonds Xazab.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">L\'application %s réclame une adresse pour vous payer. Donnez-vous votre autorisation ?</string>
 
@@ -136,7 +136,7 @@
     <string name="wallet_lock_unlock_dialog_title">Déverrouiller votre portefeuille</string>
     <string name="wallet_lock_unlock_dialog_message">Votre portefeuille est protégé par un code PIN pour les dépenses. Saisissez votre code PIN et appuyez sur Déverrouiller pour continuer.</string>
     <string name="wallet_lock_reset_wallet_title">Réinitialiser le portefeuille</string>
-    <string name="wallet_lock_reset_wallet_message">Êtes-vous certain(e) ? Votre portefeuille sera effacé et tous vos dashs seront perdus.\n\nLe seul moyen de récupérer vos dashs est un fichier de sauvegarde ou une phrase de récupération.</string>
+    <string name="wallet_lock_reset_wallet_message">Êtes-vous certain(e) ? Votre portefeuille sera effacé et tous vos xazabs seront perdus.\n\nLe seul moyen de récupérer vos xazabs est un fichier de sauvegarde ou une phrase de récupération.</string>
 
     <string name="wallet_lock_wallet_disabled">Portefeuille désactivé</string>
     <string name="wallet_lock_try_again">Veuillez réessayer dans %1$d %2$s</string>
@@ -202,7 +202,7 @@
     <string name="verify_it_is_important_subtitle">Nous allons vous afficher la clé secrète de votre portefeuille.</string>
     <string name="verify_info_text_1">Cette phrase de récupération vous permet d\'accéder aux fonds de ce portefeuille.</string>
     <string name="verify_info_text_2">Nous ne stockons pas cette phrase de récupération.</string>
-    <string name="verify_info_text_3">Vous aurez besoin de cette phrase de récupération pour accéder à vos fonds si votre appareil est perdu ou endommagé, ou si Dash Wallet en est désinstallé accidentellement.</string>
+    <string name="verify_info_text_3">Vous aurez besoin de cette phrase de récupération pour accéder à vos fonds si votre appareil est perdu ou endommagé, ou si Xazab Wallet en est désinstallé accidentellement.</string>
     <string name="verify_skip">Ignorer</string>
     <string name="verify_secure_now_btn">Sécuriser maintenant</string>
     <string name="verify_secure_now_message">Si vous perdez cet appareil, vous perdrez vos fonds. Veuillez noter votre phrase de récupération pour pouvoir restaurer votre portefeuille sur un autre appareil.</string>
@@ -232,7 +232,7 @@
     <string name="authenticate_switch_to_fingerprint">Utiliser l\'empreinte digitale</string>
     <string name="authenticate_switch_to_pin">Utiliser code PIN</string>
 
-    <string name="menu_buy_and_sell_title">Acheter &amp; vendre des dashs</string>
+    <string name="menu_buy_and_sell_title">Acheter &amp; vendre des xazabs</string>
     <string name="menu_buy_and_sell_subtitle">Se connecter aux plateformes de change tierces</string>
     <string name="menu_security_title">Sécurité</string>
     <string name="menu_security_subtitle">Voir la phrase de récupération, sauvegarder le portefeuille…</string>
@@ -253,9 +253,9 @@
     <string name="about_review_and_rate">Évaluer &amp; noter cette appli</string>
     <string name="about_contact_support">Contacter le service d\'aide</string>
     <string name="about_fork_disclaimer">Ceci est une application open source forkée de Bitcoin Wallet</string>
-    <string name="about_copyright">Copyright © 2020 Dash Core</string>
+    <string name="about_copyright">Copyright © 2020 Xazab Core</string>
     <string name="about_license">GNU General Public License v3.0</string>
-    <string name="about_version_name">Dash Wallet %s</string>
+    <string name="about_version_name">Xazab Wallet %s</string>
 
     <string name="block">Bloc</string>
     <string name="time">Heure</string>
@@ -263,7 +263,7 @@
     <string name="block_info">Info de bloc</string>
 
     <string name="scan_private_key">Scanner une clé privée</string>
-    <string name="scan_private_key_intro_1">Vous êtes sur le point de récupérer les fonds d\'un portefeuille papier Dash.</string>
+    <string name="scan_private_key_intro_1">Vous êtes sur le point de récupérer les fonds d\'un portefeuille papier Xazab.</string>
     <string name="scan_private_key_intro_2">Cela déplacera tous les fonds de ce portefeuille-là vers votre portefeuille sur cet appareil.</string>
     <string name="scan_private_key_intro_3">Quand la transaction sera confirmée, l\'autre portefeuille ne contiendra plus de fonds, et il ne devra pas être réutilisé pour des raisons de sécurité.</string>
     <string name="confirm">Confirmer</string>
@@ -308,7 +308,7 @@
 
     <string name="sync_status_wait">Veuillez attendre la fin de la synchronisation</string>
     <string name="sync_status_syncing_title">En synchronisation</string>
-    <string name="sync_status_syncing_sub_title">avec la blockchain Dash</string>
+    <string name="sync_status_syncing_sub_title">avec la blockchain Xazab</string>
     <string name="sync_status_unable_to_connect">Impossible de se connecter</string>
     <string name="sync_status_check_connection">Vérifier votre connexion</string>
     <string name="sync_status_sync_title">Synchronisation</string>

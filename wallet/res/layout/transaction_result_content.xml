@@ -24,12 +24,12 @@
         android:layout_marginBottom="15dp"
         android:text="@string/transaction_result_paid_successfully"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/dash_amount_container"
+        app:layout_constraintBottom_toTopOf="@+id/xazab_amount_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:id="@+id/dash_amount_container"
+        android:id="@+id/xazab_amount_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
@@ -52,26 +52,26 @@
             tools:visibility="visible" />
 
         <ImageView
-            android:id="@+id/dash_amount_symbol"
+            android:id="@+id/xazab_amount_symbol"
             android:layout_width="18.62dp"
             android:layout_height="14.63dp"
             android:layout_marginTop="1dp"
             android:layout_marginEnd="4dp"
             android:layout_marginRight="4dp"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/ic_dash_symbol_gray" />
+            app:srcCompat="@drawable/ic_xazab_symbol_gray" />
 
-        <org.dash.wallet.common.ui.CurrencyTextView
-            android:id="@+id/dash_amount"
+        <org.xazab.wallet.common.ui.CurrencyTextView
+            android:id="@+id/xazab_amount"
             style="@style/MontserratSemiBold.MG"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="17sp"
-            tools:text="-3.14938028 Dash" />
+            tools:text="-3.14938028 Xazab" />
 
     </LinearLayout>
 
-    <org.dash.wallet.common.ui.CurrencyTextView
+    <org.xazab.wallet.common.ui.CurrencyTextView
         android:id="@+id/fiat_value"
         style="@style/MontserratRegular.MG"
         android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="@string/transaction_result_view_on_explorer"
-        android:textColor="@color/dash_blue"
+        android:textColor="@color/xazab_blue"
         android:textSize="15sp" />
 
     <View
@@ -221,7 +221,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <org.dash.wallet.common.ui.CurrencyTextView
+            <org.xazab.wallet.common.ui.CurrencyTextView
                 android:id="@+id/transaction_fee"
                 style="@style/MontserratRegular.MG"
                 android:layout_width="wrap_content"
@@ -231,10 +231,10 @@
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="-0.00000239 Dash" />
+                tools:text="-0.00000239 Xazab" />
 
             <ImageView
-                android:id="@+id/fee_dash_icon"
+                android:id="@+id/fee_xazab_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
@@ -243,7 +243,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/transaction_fee"
                 app:layout_constraintEnd_toStartOf="@+id/transaction_fee"
                 app:layout_constraintTop_toTopOf="@+id/transaction_fee"
-                app:srcCompat="@drawable/ic_dash_symbol_gray" />
+                app:srcCompat="@drawable/ic_xazab_symbol_gray" />
 
             <TextView
                 android:id="@+id/network_fee_label"
@@ -255,7 +255,7 @@
                 android:lines="1"
                 android:text="@string/transaction_row_fee"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toStartOf="@id/fee_dash_icon"
+                app:layout_constraintEnd_toStartOf="@id/fee_xazab_icon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/transaction_fee" />
 
@@ -334,7 +334,7 @@
             app:drawableStartCompat="@drawable/ic_secured_by"
             android:drawablePadding="4dp"
             android:text="@string/dialog_confirm_secured_by"
-            android:textColor="@color/dash_gray" />
+            android:textColor="@color/xazab_gray" />
 
         <TextView
             android:id="@+id/payee_secured_by"
@@ -345,7 +345,7 @@
             android:marqueeRepeatLimit="1"
             android:singleLine="true"
             android:text="Digital Signature Trust CO."
-            android:textColor="@color/dash_black"
+            android:textColor="@color/xazab_black"
             android:textStyle="bold"
             tools:ignore="HardcodedText" />
 
@@ -383,7 +383,7 @@
 
     <Button
         android:id="@+id/transaction_close_btn"
-        style="@style/DashButton.Blue"
+        style="@style/XazabButton.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"

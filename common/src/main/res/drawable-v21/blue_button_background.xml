@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/dash_deep_blue">
+    android:color="@color/xazab_deep_blue">
 
     <item android:id="@android:id/mask">
         <shape android:shape="rectangle">
-            <solid android:color="@color/dash_deep_blue" />
+            <solid android:color="@color/xazab_deep_blue" />
             <corners android:radius="10dp" />
         </shape>
     </item>
@@ -14,13 +14,13 @@
             <item android:state_enabled="false">
                 <shape android:shape="rectangle">
                     <corners android:radius="10dp" />
-                    <solid android:color="@color/dash_light_gray" />
+                    <solid android:color="@color/xazab_light_gray" />
                 </shape>
             </item>
             <item>
                 <shape android:shape="rectangle">
                     <corners android:radius="10dp" />
-                    <solid android:color="@color/dash_blue" />
+                    <solid android:color="@color/xazab_blue" />
                 </shape>
             </item>
         </selector>

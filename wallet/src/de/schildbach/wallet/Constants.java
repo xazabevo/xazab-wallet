@@ -65,21 +65,21 @@ public final class Constants {
         switch (BuildConfig.FLAVOR) {
             case "prod":
             case "beta": {
-                DNS_SEED = new String[]{"dnsseed.dash.org", "dnsseed.dashdot.io"};
+                DNS_SEED = new String[]{"dnsseed.xazab.xyz", "dnsseed2.xazab.xyz","95.217.70.43:30303","207.180.250.179:30303","95.216.127.164:30303","52.168.141.185:30303","164.68.115.162:30303"};
                 BIP44_PATH = DeterministicKeyChain.BIP44_ACCOUNT_ZERO_PATH;
                 NETWORK_PARAMETERS = MainNetParams.get();
                 IS_PROD_BUILD = true;
                 FILENAME_NETWORK_SUFFIX = "";
-                WALLET_NAME_CURRENCY_CODE = "dash";
+                WALLET_NAME_CURRENCY_CODE = "xazab";
                 break;
             }
             case "_testNet3": {
-                DNS_SEED = new String[]{"testnet-seed.dashdot.io", "95.183.51.146", "35.161.101.35", "54.91.130.170"};
+                DNS_SEED = new String[]{"testnet-seed.xazabdot.io", "95.183.51.146", "35.161.101.35", "54.91.130.170"};
                 BIP44_PATH = DeterministicKeyChain.BIP44_ACCOUNT_ZERO_PATH_TESTNET;
                 NETWORK_PARAMETERS = TestNet3Params.get();
                 IS_PROD_BUILD = false;
                 FILENAME_NETWORK_SUFFIX = "-testnet";
-                WALLET_NAME_CURRENCY_CODE = "tdash";
+                WALLET_NAME_CURRENCY_CODE = "txazab";
                 break;
             }
             case "devNet": {
@@ -94,7 +94,7 @@ public final class Constants {
                 NETWORK_PARAMETERS = DevNetParams.get("maithai", "yMtULrhoxd8vRZrsnFobWgRTidtjg2Rnjm", 20001, DNS_SEED);
                 IS_PROD_BUILD = false;
                 FILENAME_NETWORK_SUFFIX = "-devnet";
-                WALLET_NAME_CURRENCY_CODE = "tdash";
+                WALLET_NAME_CURRENCY_CODE = "txazab";
                 break;
 
             }
@@ -102,7 +102,7 @@ public final class Constants {
                 throw new IllegalStateException("Unsupported flavor " + BuildConfig.FLAVOR);
             }
         }
-        org.dash.wallet.common.Constants.MAX_MONEY = NETWORK_PARAMETERS.getMaxMoney();
+        org.xazab.wallet.common.Constants.MAX_MONEY = NETWORK_PARAMETERS.getMaxMoney();
     }
 
     /** Bitcoinj global context. */
@@ -192,10 +192,10 @@ public final class Constants {
     public static final String DEFAULT_EXCHANGE_CURRENCY = "USD";
 
     /** Recipient e-mail address for reports. */
-    public static final String REPORT_EMAIL = "support@dash.org";
+    public static final String REPORT_EMAIL = "support@xazab.xyz";
 
     /** Subject line for manually reported issues. */
-    public static final String REPORT_SUBJECT_BEGIN = "Android Dash Wallet:  ";
+    public static final String REPORT_SUBJECT_BEGIN = "Android Xazab Wallet:  ";
     public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 
     /** Subject line for crash reports. */
@@ -212,8 +212,8 @@ public final class Constants {
 
     public static final BaseEncoding HEX = BaseEncoding.base16().lowerCase();
 
-    public static final String SOURCE_URL = "https://github.com/HashEngineering/" + CoinDefinition.coinName.toLowerCase() + "-wallet";
-    public static final String BINARY_URL = "https://github.com/HashEngineering/" + CoinDefinition.coinName.toLowerCase() + "-wallet/releases";
+    public static final String SOURCE_URL = "https://github.com/xazabevo/" + CoinDefinition.coinName.toLowerCase() + "-wallet";
+    public static final String BINARY_URL = "https://github.com/xazabevo/" + CoinDefinition.coinName.toLowerCase() + "-wallet/releases";
     public static final String MARKET_APP_URL = "market://details?id=%s";
     public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
 
@@ -236,8 +236,8 @@ public final class Constants {
     public static final int NOTIFICATION_ID_BLOCKCHAIN_SYNC = 3;
     public static final int NOTIFICATION_ID_UPGRADE_WALLET = 4;
 
-    public static String NOTIFICATION_CHANNEL_ID_TRANSACTIONS = "dash.notifications.transactions";
-    public static String NOTIFICATION_CHANNEL_ID_ONGOING = "dash.notifications.ongoing";
+    public static String NOTIFICATION_CHANNEL_ID_TRANSACTIONS = "xazab.notifications.transactions";
+    public static String NOTIFICATION_CHANNEL_ID_ONGOING = "xazab.notifications.ongoing";
 
     /** Desired number of scrypt iterations for deriving the spending PIN */
     public static final int SCRYPT_ITERATIONS_TARGET = 65536;
@@ -267,10 +267,10 @@ public final class Constants {
 
     private static final Logger log = LoggerFactory.getLogger(Constants.class);
 
-    //Dash Specific
+    //Xazab Specific
     public static long EARLIEST_HD_SEED_CREATION_TIME = 1427610960L;
 
-    public static String WALLET_URI_SCHEME = "dashwallet";
+    public static String WALLET_URI_SCHEME = "xazabwallet";
 
     public static boolean ENABLE_ZERO_FEES = false; //Enable Zero Fee's on TestNet only.
 

@@ -24,7 +24,7 @@ import org.bitcoinj.wallet.Wallet.BalanceType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.ui.OnboardingActivity;
@@ -110,7 +110,7 @@ public final class InactivityNotificationService extends Service {
             final NotificationCompat.Builder notification = new NotificationCompat.Builder(this,
                     Constants.NOTIFICATION_CHANNEL_ID_TRANSACTIONS);
             notification.setStyle(new NotificationCompat.BigTextStyle().bigText(text));
-            notification.setSmallIcon(R.drawable.ic_dash_d_white_bottom);
+            notification.setSmallIcon(R.drawable.ic_xazab_d_white_bottom);
             notification.setContentTitle(title);
             notification.setContentText(text);
             notification

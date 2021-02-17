@@ -22,9 +22,9 @@ import javax.annotation.Nullable;
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.utils.Fiat;
 import org.bitcoinj.wallet.Wallet;
-import org.dash.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.CurrencyTextView;
 
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 
 import de.schildbach.wallet.AppDatabase;
 import de.schildbach.wallet.Constants;
@@ -48,7 +48,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import static org.dash.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
+import static org.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
 
 /**
  * @author Andreas Schildbach
@@ -131,7 +131,7 @@ public final class WalletBalanceFragment extends Fragment {
             viewBalance.setEnabled(false);
         }
 
-        viewBalanceBtc = view.findViewById(R.id.wallet_balance_dash);
+        viewBalanceBtc = view.findViewById(R.id.wallet_balance_xazab);
         viewBalanceBtc.setPrefixScaleX(0.9f);
 
         viewBalanceTooMuch = view.findViewById(R.id.wallet_balance_too_much);

@@ -25,8 +25,8 @@ import org.bitcoinj.utils.Fiat;
 
 import de.schildbach.wallet.Constants;
 
-import org.dash.wallet.common.ui.CurrencyAmountView;
-import org.dash.wallet.common.ui.CurrencyAmountView.Listener;
+import org.xazab.wallet.common.ui.CurrencyAmountView;
+import org.xazab.wallet.common.ui.CurrencyAmountView.Listener;
 
 import android.view.View;
 

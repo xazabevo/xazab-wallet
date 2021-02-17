@@ -39,9 +39,9 @@ import org.bitcoinj.utils.ExchangeRate;
 import org.bitcoinj.utils.MonetaryFormat;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.ZeroConfCoinSelector;
-import org.dash.wallet.common.ui.CurrencyTextView;
-import org.dash.wallet.common.ui.Formats;
-import org.dash.wallet.common.util.GenericUtils;
+import org.xazab.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.Formats;
+import org.xazab.wallet.common.util.GenericUtils;
 
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
@@ -259,7 +259,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         private final TextView primaryStatusView;
         private final TextView secondaryStatusView;
         private final TextView timeView;
-        private final ImageView dashSymbolView;
+        private final ImageView xazabSymbolView;
         private final CurrencyTextView valueView;
         private final TextView signalView;
         private final CurrencyTextView fiatView;
@@ -277,7 +277,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             secondaryStatusView = (TextView) itemView.findViewById(R.id.transaction_row_secondary_status);
 
             timeView = (TextView) itemView.findViewById(R.id.transaction_row_time);
-            dashSymbolView = (ImageView) itemView.findViewById(R.id.dash_amount_symbol);
+            xazabSymbolView = (ImageView) itemView.findViewById(R.id.xazab_amount_symbol);
             valueView = (CurrencyTextView) itemView.findViewById(R.id.transaction_row_value);
             signalView = (TextView) itemView.findViewById(R.id.transaction_amount_signal);
 
@@ -350,7 +350,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             //
             // Set the value.  [signal] D [value]
             // signal is + or -, or not visible if the value is zero (internal or other special transactions)
-            // D is the Dash Symbol
+            // D is the Xazab Symbol
             // value has no sign.  It is zero for internal or other special transactions
             //
             valueView.setFormat(format);
@@ -360,16 +360,16 @@ public class TransactionsAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
             valueView.setVisibility(View.VISIBLE);
             signalView.setVisibility(!value.isZero() ? View.VISIBLE : View.GONE);
-            dashSymbolView.setVisibility(View.VISIBLE);
+            xazabSymbolView.setVisibility(View.VISIBLE);
             valueView.setTextColor(valueColor);
             signalView.setTextColor(valueColor);
-            dashSymbolView.setColorFilter(valueColor);
+            xazabSymbolView.setColorFilter(valueColor);
 
             if(value.isPositive()) {
-                signalView.setText(String.format("%c", org.dash.wallet.common.Constants.CURRENCY_PLUS_SIGN));
+                signalView.setText(String.format("%c", org.xazab.wallet.common.Constants.CURRENCY_PLUS_SIGN));
                 valueView.setAmount(value);
             } else if(value.isNegative()) {
-                signalView.setText(String.format("%c", org.dash.wallet.common.Constants.CURRENCY_MINUS_SIGN));
+                signalView.setText(String.format("%c", org.xazab.wallet.common.Constants.CURRENCY_MINUS_SIGN));
                 valueView.setAmount(value.negate());
             } else {
                 valueView.setAmount(Coin.ZERO);

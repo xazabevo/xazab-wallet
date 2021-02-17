@@ -21,7 +21,7 @@
         app:layout_constraintWidth_percent="0.8" />
 
     <ImageView
-        android:id="@+id/qr_dash_logo"
+        android:id="@+id/qr_xazab_logo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="fitXY"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="@+id/qr_preview"
         app:layout_constraintTop_toTopOf="@+id/qr_preview"
         app:layout_constraintWidth_percent="0.15"
-        app:srcCompat="@drawable/ic_dash_d_circle" />
+        app:srcCompat="@drawable/ic_xazab_d_circle" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/address_preview_pane"
@@ -56,7 +56,7 @@
             android:ellipsize="middle"
             android:gravity="center"
             android:singleLine="true"
-            android:textColor="@color/dash_gray"
+            android:textColor="@color/xazab_gray"
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,22 +77,22 @@
 
         <Button
             android:id="@+id/specify_amount_button"
-            style="@style/DashButton.Transparent"
+            style="@style/XazabButton.Transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/selectable_background_dark"
             android:gravity="center"
             android:text="@string/receive_enter_amount_button"
-            android:textColor="@color/dash_blue" />
+            android:textColor="@color/xazab_blue" />
 
         <Button
             android:id="@+id/share_button"
-            style="@style/DashButton.Transparent"
+            style="@style/XazabButton.Transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/selectable_background_dark"
             android:text="@string/receive_share_button"
-            android:textColor="@color/dash_blue" />
+            android:textColor="@color/xazab_blue" />
 
     </LinearLayout>
 

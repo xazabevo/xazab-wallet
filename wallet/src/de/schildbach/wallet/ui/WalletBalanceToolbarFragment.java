@@ -41,11 +41,11 @@ import org.bitcoinj.core.Coin;
 import org.bitcoinj.core.MasternodeSync;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.utils.Fiat;
-import org.dash.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.CurrencyTextView;
 
 import javax.annotation.Nullable;
 
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 import de.schildbach.wallet.Constants;
 import de.schildbach.wallet.WalletApplication;
 import de.schildbach.wallet.rates.ExchangeRate;
@@ -225,7 +225,7 @@ public final class WalletBalanceToolbarFragment extends Fragment {
 						final Fiat localValue = rate.coinToFiat(balance);
 						viewBalanceLocal.setVisibility(View.VISIBLE);
 						viewBalanceLocal.setFormat(Constants.LOCAL_FORMAT.code(0,
-								org.dash.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO + exchangeRate.getCurrencyCode()));
+								org.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO + exchangeRate.getCurrencyCode()));
 						viewBalanceLocal.setAmount(localValue);
 					}
 					else

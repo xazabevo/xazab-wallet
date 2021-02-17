@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import de.schildbach.wallet.util.*
 import de.schildbach.wallet_test.R
 import org.bitcoinj.core.Address
 import org.bitcoinj.core.Transaction
-import org.dash.wallet.common.ui.CurrencyTextView
+import org.xazab.wallet.common.ui.CurrencyTextView
 
 /**
  * @author Samuel Barbosa
@@ -39,9 +39,9 @@ class TransactionResultViewBinder(private val containerView: View) {
     private val ctx by lazy { containerView.context }
     private val checkIcon by lazy { containerView.findViewById<ImageView>(R.id.check_icon) }
     private val transactionAmountSignal by lazy { containerView.findViewById<TextView>(R.id.transaction_amount_signal) }
-    private val dashAmountSymbol by lazy { containerView.findViewById<ImageView>(R.id.dash_amount_symbol) }
+    private val xazabAmountSymbol by lazy { containerView.findViewById<ImageView>(R.id.xazab_amount_symbol) }
     private val transactionTitle by lazy { containerView.findViewById<TextView>(R.id.transaction_title) }
-    private val dashAmount by lazy { containerView.findViewById<CurrencyTextView>(R.id.dash_amount) }
+    private val xazabAmount by lazy { containerView.findViewById<CurrencyTextView>(R.id.xazab_amount) }
     private val transactionFee by lazy { containerView.findViewById<CurrencyTextView>(R.id.transaction_fee) }
     private val fiatValue by lazy { containerView.findViewById<CurrencyTextView>(R.id.fiat_value) }
     private val date by lazy { containerView.findViewById<TextView>(R.id.transaction_date_and_time) }
@@ -144,12 +144,12 @@ class TransactionResultViewBinder(private val containerView: View) {
             outputsAddressesContainer.addView(addressView)
         }
 
-        dashAmount.setFormat(noCodeFormat)
+        xazabAmount.setFormat(noCodeFormat)
         //For displaying purposes only
         if (tx.value!!.isNegative) {
-            dashAmount.setAmount(tx.value!!.negate())
+            xazabAmount.setAmount(tx.value!!.negate())
         } else {
-            dashAmount.setAmount(tx.value)
+            xazabAmount.setAmount(tx.value)
         }
 
         transactionFee.setFormat(noCodeFormat)
@@ -191,24 +191,24 @@ class TransactionResultViewBinder(private val containerView: View) {
     }
 
     private fun setTransactionDirection(tx: Transaction) {
-        val dashAmountTextColor: Int
+        val xazabAmountTextColor: Int
         if (tx.isOutgoing()) {
             checkIcon.setImageResource(R.drawable.ic_transaction_sent)
             transactionTitle.text = ctx.getText(R.string.transaction_details_amount_sent)
             transactionAmountSignal.text = "-"
-            dashAmountTextColor = ContextCompat.getColor(ctx, android.R.color.black)
+            xazabAmountTextColor = ContextCompat.getColor(ctx, android.R.color.black)
         } else {
             checkIcon.setImageResource(R.drawable.ic_transaction_received)
             transactionTitle.text = ctx.getText(R.string.transaction_details_amount_received)
             transactionAmountSignal.text = "+"
-            dashAmountTextColor = ContextCompat.getColor(ctx, R.color.colorPrimary)
+            xazabAmountTextColor = ContextCompat.getColor(ctx, R.color.colorPrimary)
         }
 
         feeRow.visibility = if (tx.fee != null && tx.fee.isPositive) View.VISIBLE else View.GONE
 
-        transactionAmountSignal.setTextColor(dashAmountTextColor)
-        dashAmountSymbol.setColorFilter(dashAmountTextColor)
-        dashAmount.setTextColor(dashAmountTextColor)
+        transactionAmountSignal.setTextColor(xazabAmountTextColor)
+        xazabAmountSymbol.setColorFilter(xazabAmountTextColor)
+        xazabAmount.setTextColor(xazabAmountTextColor)
 
         checkIcon.visibility = View.VISIBLE
         transactionAmountSignal.visibility = View.VISIBLE

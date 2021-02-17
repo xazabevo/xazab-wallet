@@ -12,7 +12,7 @@
     <string name="blockchain_state_progress_stalled">Synchronizácia pozastavená</string>
     <string name="blockchain_state_progress_problem_storage">Synchronizácia: Problém s dátovým úložiskom</string>
     <string name="blockchain_state_progress_problem_network">Synchronizácia: Problém so sieťou</string>
-    <string name="wallet_address_fragment_clipboard_msg">Dash adresa skopírovaná do schránky</string>
+    <string name="wallet_address_fragment_clipboard_msg">Xazab adresa skopírovaná do schránky</string>
     <string name="wallet_address_dialog_fragment_hint">Pre ochranu súkromia sa vaša adresa zmení vždy po prijatí platby.</string>
     <string name="wallet_balance_fragment_too_much">Tato čiastka je pomerne vysoká na nosenie vo vrecku. Presuňte nejakú čiastku na bezpečnejšie miesto.</string>
     <string name="wallet_balance_fragment_replaying">Počas synchronizácie je zostatok nedostupný.</string>
@@ -38,26 +38,26 @@
     <string name="wallet_options_encrypt_keys_change">Zmeniť PIN</string>
     <string name="wallet_options_safety">Bezpečnosť</string>
     <string name="wallet_low_storage_dialog_title">Na zariadení je málo pamäťového miesta!</string>
-    <string name="wallet_low_storage_dialog_msg">Peňaženka Dash používa internú pamäť pre uchovanie transakcií a blokov. Ak dôjde miesto, prestane pracovať and vaše Dashe budú v ohrození!\n\nChcete otvoriť správcu aplikácií a odinštalovať nepotrebné aplikácie?</string>
+    <string name="wallet_low_storage_dialog_msg">Peňaženka Xazab používa internú pamäť pre uchovanie transakcií a blokov. Ak dôjde miesto, prestane pracovať and vaše Xazabe budú v ohrození!\n\nChcete otvoriť správcu aplikácií a odinštalovať nepotrebné aplikácie?</string>
     <string name="wallet_low_storage_dialog_button_apps">Spravovať aplikácie</string>
     <string name="wallet_timeskew_dialog_title">Kontrola nastavenia času a dátumu</string>
-    <string name="wallet_timeskew_dialog_msg">Čas na vašom zariadené je posunutý o %d minút. Kvôli tomuto problému pravdepodobne nemôžete odosielať alebo prijímať Dash.\n\nMali by ste skontrolovať a v prípade potreby opraviť dátum, čas a časové pásmo.</string>
+    <string name="wallet_timeskew_dialog_msg">Čas na vašom zariadené je posunutý o %d minút. Kvôli tomuto problému pravdepodobne nemôžete odosielať alebo prijímať Xazab.\n\nMali by ste skontrolovať a v prípade potreby opraviť dátum, čas a časové pásmo.</string>
     <string name="wallet_version_dialog_title">Je dostupná nová verzia!</string>
     <string name="wallet_version_dialog_msg">Táto verzia opravuje kritické chyby. Pre viac informácií navštívte Google Play.</string>
     <string name="wallet_version_dialog_msg_deprecated">Ak nevidíte aktualizáciu, znamená to, že verzia vášho operačného systému Android už nie je podporovaná.</string>
     <string name="wallet_version_dialog_button_market">Google Play</string>
     <string name="wallet_version_dialog_button_binary">Stiahnuť</string>
     <string name="wallet_old_sdk_dialog_title">Verzia Vášho Androidu je zastaralá</string>
-    <string name="wallet_old_sdk_dialog_message">Je možné, že v novších verziách Dash peňaženky už nebude podporované vaše zariadenie. V určitých prípadoch môže byť obtiažne minúť Dashe z tohoto zariadenia.\n\nJe odporúčané presunúť Dashe čo najskôr.</string>
-    <string name="send_coins_activity_title">Poslať Dash</string>
+    <string name="wallet_old_sdk_dialog_message">Je možné, že v novších verziách Xazab peňaženky už nebude podporované vaše zariadenie. V určitých prípadoch môže byť obtiažne minúť Xazabe z tohoto zariadenia.\n\nJe odporúčané presunúť Xazabe čo najskôr.</string>
+    <string name="send_coins_activity_title">Poslať Xazab</string>
     <string name="send_coins_fragment_request_payment_request_progress">Získavanie podpisu z %s...</string>
     <string name="send_coins_fragment_request_payment_request_failed_title">Získavanie podpisu zlyhalo</string>
     <string name="send_coins_fragment_request_payment_request_wrong_signature">Nesprávny podpis!</string>
     <string name="send_coins_fragment_payee_verified_by_unknown">neznáme</string>
     <string name="send_coins_fragment_receiving_address_label">Poslať ku</string>
     <string name="send_coins_fragment_receiving_address_hint">zadajte adresu alebo meno</string>
-    <string name="send_coins_fragment_receiving_address_error">Neplatná Dash adresa!</string>
-    <string name="send_coins_fragment_receiving_address_own">Chystáte sa poslať Dash sami sebe.</string>
+    <string name="send_coins_fragment_receiving_address_error">Neplatná Xazab adresa!</string>
+    <string name="send_coins_fragment_receiving_address_own">Chystáte sa poslať Xazab sami sebe.</string>
     <string name="send_coins_fragment_receiving_address_complex">komplexná\nadresa</string>
     <string name="send_coins_fragment_pending">(%s čaká na potvrdenie)</string>
     <string name="send_coins_fragment_amount_label">Poslať sumu</string>
@@ -75,7 +75,7 @@
     <string name="send_coins_fragment_direct_payment_failed_msg">Platba bude odoslaná cez P2P sieť.</string>
     <string name="send_coins_fragment_button_send">Odoslať</string>
     <string name="send_coins_fragment_button_back">Späť</string>
-    <string name="send_coins_fragment_insufficient_money_title">Nedostatočné množstvo dostupných Dashov</string>
+    <string name="send_coins_fragment_insufficient_money_title">Nedostatočné množstvo dostupných Xazabov</string>
     <string name="send_coins_fragment_insufficient_money_msg1">Chýba %s.</string>
     <string name="send_coins_fragment_insufficient_money_msg2">Chcete poslať všetko čo máte?</string>
     <string name="send_coins_fragment_empty_wallet_failed_title">Vyprázdnenie peňaženky zlyhalo</string>
@@ -110,21 +110,21 @@
     <string name="maintenance_dialog_state_decrypting">Dešifrovanie…</string>
     <string name="maintenance_dialog_state_done">Hotovo.</string>
     <string name="maintenance_dialog_button_move">Presunúť</string>
-    <string name="request_coins_activity_title">Vyžiadať Dash</string>
+    <string name="request_coins_activity_title">Vyžiadať Xazab</string>
     <string name="request_coins_fragment_amount_label">Vyžadovaná suma (nepovinné)</string>
     <string name="request_coins_fragment_accept_bluetooth_payment">Akceptovať platbu cez Bluetooth pre lepšie spracovanie</string>
     <string name="request_coins_fragment_initiate_request_qr">Dajte odosielateľovi oskenovať tento kód.</string>
     <string name="request_coins_fragment_initiate_request_nfc">Alebo sa dotknite zariadenia s podporou NFC.</string>
-    <string name="request_coins_clipboard_msg">Požiadavok Dash skopírovaný do schránky</string>
-    <string name="request_coins_share_dialog_title">Zdieľať požiadavku na Dash…</string>
-    <string name="request_coins_no_local_app_msg">Nebola nájdená žiadna ďalšia Dash aplikácia</string>
+    <string name="request_coins_clipboard_msg">Požiadavok Xazab skopírovaný do schránky</string>
+    <string name="request_coins_share_dialog_title">Zdieľať požiadavku na Xazab…</string>
+    <string name="request_coins_no_local_app_msg">Nebola nájdená žiadna ďalšia Xazab aplikácia</string>
     <string name="request_coins_options_local_app_title">Vyžiadať z lokálnej aplikácie</string>
     <string name="address_book_activity_title">Adresár</string>
     <string name="address_book_list_receiving_title">Vaše adresy</string>
     <string name="address_book_list_receiving_random">Staré adresy</string>
     <string name="address_book_list_sending_title">Zoznam adries</string>
     <string name="address_book_empty_text">Žiadny záznam v adresári</string>
-    <string name="address_book_context_send_title">Odoslať Dash na adresu</string>
+    <string name="address_book_context_send_title">Odoslať Xazab na adresu</string>
     <string name="address_book_context_edit_title">Upraviť adresu</string>
     <string name="address_book_context_remove_title">Odstrániť adresu</string>
     <string name="address_book_context_copy_to_clipboard_title">Skopírovať do schránky</string>
@@ -135,7 +135,7 @@
     <string name="address_book_options_scan_title">Skenovať adresu</string>
     <string name="address_book_options_scan_invalid">Skenované dáta nebolo možné rozpoznať</string>
     <string name="address_book_options_scan_own_address">Naskenovaná adresa je vaša vlastná.</string>
-    <string name="address_book_row_message_compromised_key">Táto adresa môže byť ohrozená. Nemali by ste ju už používať na prijímanie Dashov.</string>
+    <string name="address_book_row_message_compromised_key">Táto adresa môže byť ohrozená. Nemali by ste ju už používať na prijímanie Xazabov.</string>
     <string name="edit_address_book_entry_dialog_title_add">Pridať adresu</string>
     <string name="edit_address_book_entry_dialog_title_edit">Upraviť popis adresy</string>
     <string name="edit_address_book_entry_dialog_title_add_receive">Pridať popis k vašej adrese</string>
@@ -148,7 +148,7 @@
     <string name="transaction_row_message_purpose_raise_fee">Táto transakcia navýši sieťový poplatok za predchádzajúcu platbu.</string>
     <string name="transaction_row_message_own_unbroadcasted">Táto platba ešte nebola odoslaná.</string>
     <string name="transaction_row_message_received_direct">Táto platba bola prijatá priamo. Existuje určité riziko, že sa nikdy nebude dať minúť.</string>
-    <string name="transaction_row_message_received_unconfirmed_delayed">Došlo ku omeškaniu potvrdenia tejto platby, pravdepodobne kvôli preťaženiu site Dash.</string>
+    <string name="transaction_row_message_received_unconfirmed_delayed">Došlo ku omeškaniu potvrdenia tejto platby, pravdepodobne kvôli preťaženiu site Xazab.</string>
     <string name="transaction_row_message_received_unconfirmed_unlocked">Táto platba môže byť teraz minutá bez potvrdenia.</string>
     <string name="transaction_row_message_received_in_conflict">Táto platba má zvýšené riziko jej odvolania odosielateľom. Pokiaľ môžete, počkajte na potvrdenie.</string>
     <string name="transaction_row_message_received_dead">Táto platba bola zrušená odosielateľom.</string>
@@ -215,8 +215,8 @@
     <string name="export_keys_dialog_success"><![CDATA[<p>Vaša peňaženka bola zálohovaná do <tt>%s</tt></p><p>Ak má zariadenie vymeniteľnú SD kartu, záloha <i>by mala</i> byť na tejto karte. Vyberte ju a uschovajte na bezpečnom mieste. Ak karta <i>nie je</i> odnímateľná, musíte zálohovať na iné miesto, ako je vaše zariadenie.</p><b>Ak je vaše zariadenie jediné miesto kde existuje záloha, riskujete, že naraz stratíte oboje!</b><p><p> V každom prípade, nezabudnite zapamätajte si svoje záložné heslo. Chcete svoju peňaženku teraz zálohovať?</p>]]></string>
     <string name="export_keys_dialog_failure">Vašu peňaženku sa nepodarilo zálohovať:\n%s</string>
     <string name="export_keys_dialog_button_archive">Archivovať</string>
-    <string name="export_keys_dialog_mail_subject">Záloha Dash peňaženky</string>
-    <string name="export_keys_dialog_mail_text">Príloha obsahuje zašifrované privátne kľúče Dash, uchovajte ich v bezpečí. Nezabudnite vaše heslo!</string>
+    <string name="export_keys_dialog_mail_subject">Záloha Xazab peňaženky</string>
+    <string name="export_keys_dialog_mail_text">Príloha obsahuje zašifrované privátne kľúče Xazab, uchovajte ich v bezpečí. Nezabudnite vaše heslo!</string>
     <string name="export_keys_dialog_mail_intent_chooser">Archivovať peňaženku použitím…</string>
     <string name="export_keys_dialog_mail_intent_failed">Archivácia peňaženky sa nepodarila.</string>
     <string name="import_export_keys_dialog_password">heslo</string>
@@ -243,8 +243,8 @@
     <string name="scan_camera_permission_dialog_message">Pre skenovanie QR kódu musíte povoliť používanie fotoaparátu.</string>
     <string name="input_parser_io_error">Nepodarilo sa prečítať:\n%s</string>
     <string name="input_parser_cannot_classify">Nepodarilo sa rozpoznať vstup:\n%s</string>
-    <string name="input_parser_invalid_bitcoin_uri">Neplatná Dash URI:\n%s</string>
-    <string name="input_parser_invalid_address">Neplatná Dash adresa!\n(Zamenené Mainnet/Testnet?)</string>
+    <string name="input_parser_invalid_bitcoin_uri">Neplatná Xazab URI:\n%s</string>
+    <string name="input_parser_invalid_address">Neplatná Xazab adresa!\n(Zamenené Mainnet/Testnet?)</string>
     <string name="input_parser_unverifyable_paymentrequest">Požiadavka na platbu sa nedá overiť:\n%s</string>
     <string name="input_parser_invalid_paymentrequest">Neplatná žiadosť o platbu:\n%s</string>
     <string name="input_parser_invalid_transaction">Neplatná transakcia:\n%s</string>
@@ -253,11 +253,11 @@
     <string name="preferences_category_labs">Experimentálne</string>
     <string name="preferences_precision_title">Jednotka a presnosť</string>
     <string name="preferences_precision_summary">Jednotka pre zobrazenie sumy. Neovplyvňuje výpočty.</string>
-    <string name="preferences_precision_labels_8">DASH, 8 desatinných miest</string>
-    <string name="preferences_precision_labels_6">DASH, 6 desatinných miest</string>
-    <string name="preferences_precision_labels_4">DASH, 4 desatinné miesta</string>
-    <string name="preferences_precision_labels_2_3">mDASH, 2 desatinné miesta</string>
-    <string name="preferences_precision_labels_0_6">µDASH, bez desatinných miest</string>
+    <string name="preferences_precision_labels_8">XAZAB, 8 desatinných miest</string>
+    <string name="preferences_precision_labels_6">XAZAB, 6 desatinných miest</string>
+    <string name="preferences_precision_labels_4">XAZAB, 4 desatinné miesta</string>
+    <string name="preferences_precision_labels_2_3">mXAZAB, 2 desatinné miesta</string>
+    <string name="preferences_precision_labels_0_6">µXAZAB, bez desatinných miest</string>
     <string name="preferences_own_name_title">Vlastné meno</string>
     <string name="preferences_own_name_summary">Vaše meno, ktoré sa pridá ku žiadosti o platbu. Snažte sa byť stručný.</string>
     <string name="preferences_send_coins_autoclose_title">Automaticky zatvoriť dialógové okno odosielania mincí</string>
@@ -291,7 +291,7 @@
     <string name="report_issue_dialog_title_issue">Nahlásiť problém</string>
     <string name="report_issue_dialog_title_crash">Zistené predchádzajúce zlyhanie aplikácie</string>
     <string name="report_issue_dialog_title_transaction">Nahlásiť problém s vybranou platbou</string>
-    <string name="report_issue_dialog_message_issue">Popíšte čo najpodrobnejšie problém, aby sa dal zopakovať. Ak je to možné, použite anglický jazyk. Do 24 hodín očakávajte email od podporného tímu Dash.</string>
+    <string name="report_issue_dialog_message_issue">Popíšte čo najpodrobnejšie problém, aby sa dal zopakovať. Ak je to možné, použite anglický jazyk. Do 24 hodín očakávajte email od podporného tímu Xazab.</string>
     <string name="report_issue_dialog_message_crash">Chcete odoslať správu o probléme, a tým pomôcť tento problém opraviť?</string>
     <string name="report_issue_dialog_description">popis problému</string>
     <string name="report_issue_dialog_report">Odoslať</string>
@@ -307,7 +307,7 @@
     <string name="about_license_title">Licencia</string>
     <string name="about_source_title">Zdrojový kód</string>
     <string name="about_category_credits">Táto aplikácia používa...</string>
-    <string name="about_credits_bitcoinj_title">dashj %s, a implementáciu protokolu Dash</string>
+    <string name="about_credits_bitcoinj_title">xazabj %s, a implementáciu protokolu Xazab</string>
     <string name="about_credits_zxing_title">ZXing, knižnicu na spracovanie QR kódov</string>
     <string name="about_credits_icon_title">Táto aplikácia používa ikony od "bitboy"</string>
     <string name="about_credits_scrypt_title">Scrypt, implementovali Will Glozer a Colin Percival</string>
@@ -319,11 +319,11 @@
     <string name="about_community_googleplus_summary">Diskusia o aplikácii</string>
     <string name="notification_coins_received_msg">Prijaté %s</string>
     <string name="notification_peers_connected_msg">%d pripojených uzlov</string>
-    <string name="notification_inactivity_title">Na tomto zariadení máte ešte Dash!</string>
-    <string name="notification_inactivity_message">Na tomto zariadení máte stále Dashe! Nezabudnite si pred odinštalovaním Dash peňaženky zapísať svoju frázu pre obnovenie, inak stratíte svoj zostatok %s.</string>
+    <string name="notification_inactivity_title">Na tomto zariadení máte ešte Xazab!</string>
+    <string name="notification_inactivity_message">Na tomto zariadení máte stále Xazabe! Nezabudnite si pred odinštalovaním Xazab peňaženky zapísať svoju frázu pre obnovenie, inak stratíte svoj zostatok %s.</string>
     <string name="notification_inactivity_action_dismiss">Pripomenúť neskôr </string>
     <string name="notification_inactivity_action_dismiss_forever">Nepripomínať</string>
-    <string name="appwidget_wallet_balance_title">Bilancia Dash</string>
+    <string name="appwidget_wallet_balance_title">Bilancia Xazab</string>
 
     <!-- generic buttons -->
     <string name="button_ok">OK</string>
@@ -341,8 +341,8 @@
     <string name="button_paste">Vložiť</string>
     <string name="button_share">Zdieľať</string>
     <string name="button_set_as_default">Nastaviť ako predvolené</string>
-    <string name="button_request_coins">Vyžiadať Dash</string>
-    <string name="button_send_coins">Poslať Dash</string>
+    <string name="button_request_coins">Vyžiadať Xazab</string>
+    <string name="button_send_coins">Poslať Xazab</string>
     <string name="button_pay">Poslať</string>
     <string name="button_scan">Skenovať</string>
     <string name="button_settings">Nastavenia</string>
@@ -363,8 +363,8 @@
 
     <string name="transaction_fragment_confirmations_label">Potvrdení</string>
 
-    <string name="dash_slogan">Rýchla - Súkromná - Bezpečená</string>
-    <string name="dash_wallet">Peňaženka</string>
+    <string name="xazab_slogan">Rýchla - Súkromná - Bezpečená</string>
+    <string name="xazab_wallet">Peňaženka</string>
 
     <string name="activity_security_backup_wallet">Zálohovať peňaženku do súboru</string>
     <string name="activity_security_view_recovery_phrase">Zobraziť frázu pre obnovenie</string>

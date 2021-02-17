@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,9 +52,9 @@ import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.Wallet.BalanceType;
 import org.bitcoinj.wallet.Wallet.CouldNotAdjustDownwards;
 import org.bitcoinj.wallet.Wallet.DustySendRequested;
-import org.dash.wallet.common.Configuration;
-import org.dash.wallet.common.ui.DialogBuilder;
-import org.dash.wallet.common.util.GenericUtils;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.util.GenericUtils;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -178,7 +178,7 @@ public class SendCoinsFragment extends Fragment {
         });
 
         enterAmountSharedViewModel = ViewModelProviders.of(activity).get(EnterAmountSharedViewModel.class);
-        enterAmountSharedViewModel.getDashAmountData().observe(getViewLifecycleOwner(), new Observer<Coin>() {
+        enterAmountSharedViewModel.getXazabAmountData().observe(getViewLifecycleOwner(), new Observer<Coin>() {
             @Override
             public void onChanged(Coin amount) {
                 if (!wasAmountChangedByTheUser) {
@@ -272,7 +272,7 @@ public class SendCoinsFragment extends Fragment {
         handler.post(new Runnable() {
             @Override
             public void run() {
-                enterAmountSharedViewModel.getChangeDashAmountEvent().setValue(paymentIntent.getAmount());
+                enterAmountSharedViewModel.getChangeXazabAmountEvent().setValue(paymentIntent.getAmount());
                 viewModel.state.setValue(SendCoinsViewModel.State.INPUT);
                 handler.post(dryrunRunnable);
             }
@@ -284,7 +284,7 @@ public class SendCoinsFragment extends Fragment {
             if (!isUserAuthorized() || config.getSpendingConfirmationEnabled()) {
                 Coin thresholdAmount = Coin.parseCoin(
                         Float.valueOf(config.getBiometricLimit()).toString());
-                if (enterAmountSharedViewModel.getDashAmount().isLessThan(thresholdAmount)) {
+                if (enterAmountSharedViewModel.getXazabAmount().isLessThan(thresholdAmount)) {
                     CheckPinDialog.show(activity, AUTH_REQUEST_CODE_SEND);
                 } else {
                     CheckPinDialog.show(activity, AUTH_REQUEST_CODE_SEND, true);
@@ -340,7 +340,7 @@ public class SendCoinsFragment extends Fragment {
             log.error("illegal state dryrunSendRequest == null");
             return;
         }
-        Coin editedAmount = enterAmountSharedViewModel.getDashAmount();
+        Coin editedAmount = enterAmountSharedViewModel.getXazabAmount();
         ExchangeRate exchangeRate = enterAmountSharedViewModel.getExchangeRate();
 
         viewModel.signAndSendPayment(editedAmount, exchangeRate);
@@ -366,16 +366,16 @@ public class SendCoinsFragment extends Fragment {
         final Coin available = wallet.getBalance(BalanceType.AVAILABLE);
         final Coin pending = estimated.subtract(available);
 
-        final MonetaryFormat dashFormat = config.getFormat();
+        final MonetaryFormat xazabFormat = config.getFormat();
 
         final DialogBuilder dialog = DialogBuilder.warn(activity,
                 R.string.send_coins_fragment_insufficient_money_title);
         final StringBuilder msg = new StringBuilder();
-        msg.append(getString(R.string.send_coins_fragment_insufficient_money_msg1, dashFormat.format(missing)));
+        msg.append(getString(R.string.send_coins_fragment_insufficient_money_msg1, xazabFormat.format(missing)));
 
         if (pending.signum() > 0)
             msg.append("\n\n")
-                    .append(getString(R.string.send_coins_fragment_pending, dashFormat.format(pending)));
+                    .append(getString(R.string.send_coins_fragment_pending, xazabFormat.format(pending)));
         if (viewModel.getBasePaymentIntentValue().mayEditAmount())
             msg.append("\n\n").append(getString(R.string.send_coins_fragment_insufficient_money_msg2));
         dialog.setMessage(msg);
@@ -439,7 +439,7 @@ public class SendCoinsFragment extends Fragment {
             viewModel.dryrunSendRequest = null;
             viewModel.dryrunException = null;
 
-            final Coin amount = enterAmountSharedViewModel.getDashAmount();
+            final Coin amount = enterAmountSharedViewModel.getXazabAmount();
             final Wallet wallet = viewModel.getWallet();
             final Address dummyAddress = wallet.currentReceiveAddress(); // won't be used, tx is never committed
 
@@ -489,20 +489,20 @@ public class SendCoinsFragment extends Fragment {
         if (getState() == SendCoinsViewModel.State.INPUT) {
             CharSequence message = null;
             if (blockchainState != null && blockchainState.getReplaying()) {
-                message = coloredString(getString(R.string.send_coins_fragment_hint_replaying), R.color.dash_red, true);
+                message = coloredString(getString(R.string.send_coins_fragment_hint_replaying), R.color.xazab_red, true);
                 enterAmountSharedViewModel.getMessageTextStringData().setValue(message);
             } else {
-                if (Coin.ZERO.equals(enterAmountSharedViewModel.getDashAmount()) && wasAmountChangedByTheUser) {
-                    message = coloredString(getString(R.string.send_coins_fragment_hint_dusty_send), R.color.dash_red, true);
+                if (Coin.ZERO.equals(enterAmountSharedViewModel.getXazabAmount()) && wasAmountChangedByTheUser) {
+                    message = coloredString(getString(R.string.send_coins_fragment_hint_dusty_send), R.color.xazab_red, true);
                 } else if (viewModel.dryrunException != null) {
                     if (viewModel.dryrunException instanceof DustySendRequested)
-                        message = coloredString(getString(R.string.send_coins_fragment_hint_dusty_send), R.color.dash_red, true);
+                        message = coloredString(getString(R.string.send_coins_fragment_hint_dusty_send), R.color.xazab_red, true);
                     else if (viewModel.dryrunException instanceof InsufficientMoneyException) {
-                        message = coloredString(getString(R.string.send_coins_fragment_hint_insufficient_money), R.color.dash_red, true);
+                        message = coloredString(getString(R.string.send_coins_fragment_hint_insufficient_money), R.color.xazab_red, true);
                     } else if (viewModel.dryrunException instanceof CouldNotAdjustDownwards) {
-                        message = coloredString(getString(R.string.send_coins_fragment_hint_dusty_send), R.color.dash_red, true);
+                        message = coloredString(getString(R.string.send_coins_fragment_hint_dusty_send), R.color.xazab_red, true);
                     } else {
-                        message = coloredString(viewModel.dryrunException.toString(), R.color.dash_red, true);
+                        message = coloredString(viewModel.dryrunException.toString(), R.color.xazab_red, true);
                     }
                 }
                 if (isUserAuthorized()) {
@@ -554,10 +554,10 @@ public class SendCoinsFragment extends Fragment {
         Coin amount;
         String total;
         if (viewModel.dryrunSendRequest.emptyWallet) {
-            amount = enterAmountSharedViewModel.getDashAmount().minus(txFee);
-            total = enterAmountSharedViewModel.getDashAmount().toPlainString();
+            amount = enterAmountSharedViewModel.getXazabAmount().minus(txFee);
+            total = enterAmountSharedViewModel.getXazabAmount().toPlainString();
         } else {
-            amount = enterAmountSharedViewModel.getDashAmount();
+            amount = enterAmountSharedViewModel.getXazabAmount();
             total = amount.add(txFee).toPlainString();
         }
 

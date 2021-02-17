@@ -22,11 +22,11 @@ import javax.annotation.Nullable;
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.utils.ExchangeRate;
 import org.bitcoinj.wallet.Wallet;
-import org.dash.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.CurrencyTextView;
 
 import com.google.common.base.Strings;
 
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 
 import de.schildbach.wallet.AppDatabase;
 import de.schildbach.wallet.Constants;

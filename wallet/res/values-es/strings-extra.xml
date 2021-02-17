@@ -34,7 +34,7 @@
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_pay_to_address">Enviar a Dirección</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
-    <string name="shortcut_buy_sell">Comprar / Vender Dash</string>
+    <string name="shortcut_buy_sell">Comprar / Vender Xazab</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
     <string name="shortcut_receive">Recibir</string>
     <!-- Home Screen: Shortcut Button: 2 lines, 9 characters across -->
@@ -59,8 +59,8 @@
     <string name="perm_lock_close_app">Cerrar</string>
 
     <string name="scan_to_pay_error_dialog_title">Escanear para Enviar</string>
-    <string name="scan_to_pay_error_dialog_message">Dirección de Dash o solicitud de URL no válida en el portapapeles:\n\n%s</string>
-    <string name="scan_to_pay_error_dialog_message_no_data">Dirección de Dash o solicitud de URL no válida en el portapapeles</string>
+    <string name="scan_to_pay_error_dialog_message">Dirección de Xazab o solicitud de URL no válida en el portapapeles:\n\n%s</string>
+    <string name="scan_to_pay_error_dialog_message_no_data">Dirección de Xazab o solicitud de URL no válida en el portapapeles</string>
 
     <string name="receive_title">Recibir</string>
     <string name="receive_enter_amount_message">Especificar la cantidad a recibir</string>
@@ -110,14 +110,14 @@
     <string name="export_keys_dialog_title_to_seed">Ver Frase de Recuperación</string>
     <string name="import_keys_dialog_title_from_seed">Restablecer billetera con frase de recuperación</string>
     <string name="backup_to_seed_wallet_dialog_message">Esta es tu frase de recuperación. Por favor anótala.</string>
-    <string name="backup_wallet_to_seed_dialog_warning">NO DEJES a nadie ver tu frase de recuperación o podrán gastar tus Dash.</string>
+    <string name="backup_wallet_to_seed_dialog_warning">NO DEJES a nadie ver tu frase de recuperación o podrán gastar tus Xazab.</string>
     <string name="backup_to_seed_wallet_dialog_enter_pin_message">Tu billetera está protegida por un PIN. Introduce tu PIN y presiona Mostrar para ver tu frase de recuperación.</string>
     <string name="import_keys_from_seed_dialog_message">Introduce tu frase de recuperación aqui.</string>
     <string name="import_export_keys_dialog_password_phrase">La frase de recuperación va aquí.</string>
     <string name="preferences_report_issue_summary">Reúne información sobre tu problema y envía un email a los desarrolladores con tu reporte.</string>
     <string name="navigation_configuration">Configuración</string>
     <string name="button_copy_address">Copiar dirección</string>
-    <string name="request_coins_clipboard_address_msg">Dirección Dash copiada en el portapapeles</string>
+    <string name="request_coins_clipboard_address_msg">Dirección Xazab copiada en el portapapeles</string>
     <string name="backup_wallet_to_seed_show_recovery_phrase">Mostrar</string>
     <string name="restore_wallet_from_invalid_seed_warning_message">\"%s\" no es una palabra de la frase de recuperación</string>
     <string name="restore_wallet_from_invalid_seed_not_twelve_words">La frase de recuperación debe contener 12 palabras</string>
@@ -128,7 +128,7 @@
     <string name="send_coins_fragment_hint_fee_zero">No se pagará ninguna comisión. Usa "Sin comisión", solo si no te importa el tiempo de confirmación.</string>
 
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
-    <string name="wallet_uri_handler_public_key_request_dialog_msg">La aplicación %s le gustaría recibir tu Llave Pública Maestra. Esto puede ser usado para realizar un seguimiento de tu billetera, esto no puede ser usado para mover tus Dash.</string>
+    <string name="wallet_uri_handler_public_key_request_dialog_msg">La aplicación %s le gustaría recibir tu Llave Pública Maestra. Esto puede ser usado para realizar un seguimiento de tu billetera, esto no puede ser usado para mover tus Xazab.</string>
     <!-- Deep Links:  Message pops up when another app requests information from this app -->
     <string name="wallet_uri_handler_address_request_dialog_msg">La aplicación %s está solicitando una dirección para que pueda pagarte. ¿Te gustaría autorizar esto?</string>
 
@@ -139,7 +139,7 @@
     <string name="wallet_lock_unlock_dialog_title">Abra tu billetera</string>
     <string name="wallet_lock_unlock_dialog_message">Tu billetera está protegida por un PIN. Ingresa tu PIN y presiona Abrir para continuar.</string>
     <string name="wallet_lock_reset_wallet_title">Reiniciar billetera</string>
-    <string name="wallet_lock_reset_wallet_message">¿Estás seguro? Tu billetera se borrará y todos tus Dash se perderán.\n\nLa única forma de recuperar tus Dash es con un archivo de backup o frase de recuperación.</string>
+    <string name="wallet_lock_reset_wallet_message">¿Estás seguro? Tu billetera se borrará y todos tus Xazab se perderán.\n\nLa única forma de recuperar tus Xazab es con un archivo de backup o frase de recuperación.</string>
 
     <string name="wallet_lock_wallet_disabled">Billetera deshabilitada</string>
     <string name="wallet_lock_try_again">Intente nuevamente en %1$d %2$s</string>
@@ -205,7 +205,7 @@
     <string name="verify_it_is_important_subtitle">Estamos a punto de mostrar la frase de recuperación de tu billetera.</string>
     <string name="verify_info_text_1">Esta frase de recuperación es tu acceso para los fondos en esta billetera.</string>
     <string name="verify_info_text_2">Nosotros no guardamos esta frase de recuperación.</string>
-    <string name="verify_info_text_3">Necesitarás esta frase de recuperación para acceder a tus fondos si este dispositivo se pierde, daña o si la billetera de Dash se desinstala accidentalmente de este dispositivo.</string>
+    <string name="verify_info_text_3">Necesitarás esta frase de recuperación para acceder a tus fondos si este dispositivo se pierde, daña o si la billetera de Xazab se desinstala accidentalmente de este dispositivo.</string>
     <string name="verify_skip">Salta</string>
     <string name="verify_secure_now_btn">Asegurar ahora</string>
     <string name="verify_secure_now_message">Si pierdes este dispositivo, podrás perder tus fondos. Obtén tu frase de recuperación para que puedas restaurar tu billetera en otro dispositivo.</string>
@@ -235,7 +235,7 @@
     <string name="authenticate_switch_to_fingerprint">Usar huella dactilar</string>
     <string name="authenticate_switch_to_pin">Usar PIN</string>
 
-    <string name="menu_buy_and_sell_title">Comprar &amp; Vender Dash</string>
+    <string name="menu_buy_and_sell_title">Comprar &amp; Vender Xazab</string>
     <string name="menu_buy_and_sell_subtitle">Conectar con exchanges de terceros</string>
     <string name="menu_security_title">Seguridad</string>
     <string name="menu_security_subtitle">Ver frase de recuperación, hacer backup…</string>
@@ -256,9 +256,9 @@
     <string name="about_review_and_rate">Evaluar la app</string>
     <string name="about_contact_support">Contactar Soporte</string>
     <string name="about_fork_disclaimer">Esta es una aplicación de código abierto derivada de una billetera de Bitcoin</string>
-    <string name="about_copyright">Copyright © 2020 Dash Core</string>
+    <string name="about_copyright">Copyright © 2020 Xazab Core</string>
     <string name="about_license">Licencia pública general GNU v3.0</string>
-    <string name="about_version_name">Billetera de Dash %s</string>
+    <string name="about_version_name">Billetera de Xazab %s</string>
 
     <string name="block">Bloque</string>
     <string name="time">Tiempo</string>
@@ -266,7 +266,7 @@
     <string name="block_info">Información de los bloques</string>
 
     <string name="scan_private_key">Escanear Llave Privada</string>
-    <string name="scan_private_key_intro_1">Estás a punto de transferir los fondos desde una billetera de papel Dash.</string>
+    <string name="scan_private_key_intro_1">Estás a punto de transferir los fondos desde una billetera de papel Xazab.</string>
     <string name="scan_private_key_intro_2">Esto moverá todas las monedas de aquella billetera a la billetera en tu dispositivo.</string>
     <string name="scan_private_key_intro_3">Al confirmarse la transacción, la billetera de papel quedará inutilizada y no deberá ser reutilizada por razones de seguridad.</string>
     <string name="confirm">Confirmar</string>
@@ -311,7 +311,7 @@
 
     <string name="sync_status_wait">Por favor espera hasta que se complete la sincronización</string>
     <string name="sync_status_syncing_title">Sincronizando</string>
-    <string name="sync_status_syncing_sub_title">con la blockchain de Dash</string>
+    <string name="sync_status_syncing_sub_title">con la blockchain de Xazab</string>
     <string name="sync_status_unable_to_connect">No fue posible conectarse</string>
     <string name="sync_status_check_connection">Verifica tu conección</string>
     <string name="sync_status_sync_title">Sincronización</string>
@@ -333,8 +333,8 @@
     <string name="payment_request_paid_to">Pagado a</string>
 
     <string name="import_image_not_valid_qr_code">No es un código QR válido</string>
-    <string name="import_image_please_use_valid_qr_code">Utilice un código QR de Dash válido</string>
+    <string name="import_image_please_use_valid_qr_code">Utilice un código QR de Xazab válido</string>
     <string name="import_image_no_private_key_copied">No se copió la clave privada</string>
-    <string name="import_image_import_valid_private_key">Copie una clave privada válida para importar Dash desde ella</string>
+    <string name="import_image_import_valid_private_key">Copie una clave privada válida para importar Xazab desde ella</string>
     <string name="import_image_invalid_private">Clave Privada Inválida</string>
 </resources>

@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,8 +37,8 @@ import de.schildbach.wallet_test.R
 import org.bitcoinj.core.PrefixedChecksummedBytes
 import org.bitcoinj.core.Transaction
 import org.bitcoinj.core.VerificationException
-import org.dash.wallet.common.ui.FancyAlertDialog
-import org.dash.wallet.common.ui.FancyAlertDialogViewModel
+import org.xazab.wallet.common.ui.FancyAlertDialog
+import org.xazab.wallet.common.ui.FancyAlertDialogViewModel
 import org.slf4j.LoggerFactory
 
 /**

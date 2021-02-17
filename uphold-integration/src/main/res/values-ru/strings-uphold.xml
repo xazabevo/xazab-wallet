@@ -2,13 +2,13 @@
 <resources>
 
     <string name="uphold_account">Uphold</string>
-    <string name="uphold_buy_dash_activity_title">Купить/продать Dash с помощью Uphold</string>
-    <string name="uphold_buy_dash_with_uphold">Купить Dash с помощью аккаунта Uphold</string>
-    <string name="uphold_buy_dash_button">Купить Dash</string>
+    <string name="uphold_buy_xazab_activity_title">Купить/продать Xazab с помощью Uphold</string>
+    <string name="uphold_buy_xazab_with_uphold">Купить Xazab с помощью аккаунта Uphold</string>
+    <string name="uphold_buy_xazab_button">Купить Xazab</string>
     <string name="uphold_transfer_to_this_wallet_button">Осуществить перевод из Uphold</string>
     <string name="uphold_link_account">Привязать Uphold аккаунт </string>
-    <string name="uphold_account_dash_balance">Ваш баланс Dash на Uphold составляет</string>
-    <string name="uphold_transfer_to_this_wallet">Перевести Dash из Uphold аккаунта на этот кошелёк</string>
+    <string name="uphold_account_xazab_balance">Ваш баланс Xazab на Uphold составляет</string>
+    <string name="uphold_transfer_to_this_wallet">Перевести Xazab из Uphold аккаунта на этот кошелёк</string>
     <string name="uphold_withdrawal_deduct_fee_disclaimer">Комиссия будет списана из запрашиваемой суммы.</string>
     <string name="uphold_withdrawal_instructions">Укажите сумму перевода</string>
     <string name="uphold_withdrawal_success_title">Успешно</string>
@@ -21,9 +21,9 @@
     <string name="uphold_logout_explanation_text">Вам также необходимо будет выйти из своей учётной записи Uphold используя браузер</string>
     <string name="uphold_logout_go_to_website">Перейти на сайт</string>
     <string name="uphold_error">Ошибка Uphold </string>
-    <string name="uphold_error_not_logged_in">Dash Wallet больше не связан с вашим аккаунтом Uphold. На следующем экране нажмите Привязать Uphold аккаунт.</string>
+    <string name="uphold_error_not_logged_in">Xazab Wallet больше не связан с вашим аккаунтом Uphold. На следующем экране нажмите Привязать Uphold аккаунт.</string>
     <string name="uphold_error_not_available">Сервис Uphold недоступен. Пожалуйста, попробуйте позже.</string>
-    <string name="uphold_error_report_issue">Пожалуйста, сообщите об этой проблеме в службу поддержки Dash Wallet, используя пункт "Сообщить о проблеме" в главном меню.</string>
+    <string name="uphold_error_report_issue">Пожалуйста, сообщите об этой проблеме в службу поддержки Xazab Wallet, используя пункт "Сообщить о проблеме" в главном меню.</string>
 
     <string name="uphold_general_error_title">Ошибка</string>
     <string name="uphold_api_error_title">Ошибка Uphold </string>

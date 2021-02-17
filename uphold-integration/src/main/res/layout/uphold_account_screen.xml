@@ -59,7 +59,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/uphold_account_dash_balance"
+                android:text="@string/uphold_account_xazab_balance"
                 style="@style/MontserratMedium.DB.14"/>
 
         </LinearLayout>
@@ -73,13 +73,13 @@
             android:layout_marginBottom="32dp">
 
             <ImageView
-                android:src="@drawable/ic_dash_d_white_bottom"
+                android:src="@drawable/ic_xazab_d_white_bottom"
                 android:tint="@color/colorPrimary"
                 android:layout_marginTop="4dp"
                 android:layout_width="24dp"
                 android:layout_height="24dp" />
 
-            <org.dash.wallet.common.ui.CurrencyTextView
+            <org.xazab.wallet.common.ui.CurrencyTextView
                 android:id="@+id/uphold_account_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,19 +94,19 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/uphold_buy_dash_btn"
-            style="@style/DashButton.White"
+            android:id="@+id/uphold_buy_xazab_btn"
+            style="@style/XazabButton.White"
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/uphold_buy_dash_button"
+            android:text="@string/uphold_buy_xazab_button"
             android:maxLines="2"
             android:layout_margin="16dp" />
 
         <Button
             android:id="@+id/uphold_transfer_to_this_wallet_button"
-            style="@style/DashButton.Blue"
-            android:layout_above="@id/uphold_buy_dash_btn"
+            style="@style/XazabButton.Blue"
+            android:layout_above="@id/uphold_buy_xazab_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/uphold_transfer_to_this_wallet_button"

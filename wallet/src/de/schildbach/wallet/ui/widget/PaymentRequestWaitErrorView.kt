@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,16 +37,16 @@ class PaymentRequestWaitErrorView(context: Context, attrs: AttributeSet) : Frame
         try {
             when (attrsArray.getInt(R.styleable.PaymentRequestWaitErrorView_mode, -1)) {
                 0 -> {
-                    setBackgroundColor(ResourcesCompat.getColor(resources, R.color.dash_blue, null))
-                    title_view.setTextColor(ResourcesCompat.getColor(resources, R.color.dash_white, null))
-                    message_view.setTextColor(ResourcesCompat.getColor(resources, R.color.dash_white, null))
+                    setBackgroundColor(ResourcesCompat.getColor(resources, R.color.xazab_blue, null))
+                    title_view.setTextColor(ResourcesCompat.getColor(resources, R.color.xazab_white, null))
+                    message_view.setTextColor(ResourcesCompat.getColor(resources, R.color.xazab_white, null))
                     buttons.visibility = View.GONE
                     close.visibility = View.GONE
                 }
                 1 -> {
-                    setBackgroundColor(ResourcesCompat.getColor(resources, R.color.dash_white, null))
-                    title_view.setTextColor(ResourcesCompat.getColor(resources, R.color.dash_black, null))
-                    message_view.setTextColor(ResourcesCompat.getColor(resources, R.color.dash_black, null))
+                    setBackgroundColor(ResourcesCompat.getColor(resources, R.color.xazab_white, null))
+                    title_view.setTextColor(ResourcesCompat.getColor(resources, R.color.xazab_black, null))
+                    message_view.setTextColor(ResourcesCompat.getColor(resources, R.color.xazab_black, null))
                     buttons.visibility = View.VISIBLE
                     close.visibility = View.VISIBLE
                 }

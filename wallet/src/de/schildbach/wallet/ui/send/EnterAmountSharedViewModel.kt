@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,10 +33,10 @@ class EnterAmountSharedViewModel(application: Application) : AndroidViewModel(ap
     val exchangeRate: org.bitcoinj.utils.ExchangeRate?
         get() = exchangeRateData.value?.run { org.bitcoinj.utils.ExchangeRate(Coin.COIN, exchangeRateData.value!!.fiat) }
 
-    val dashAmountData = MutableLiveData<Coin>()
+    val xazabAmountData = MutableLiveData<Coin>()
 
-    val dashAmount: Coin
-        get() = dashAmountData.value!!
+    val xazabAmount: Coin
+        get() = xazabAmountData.value!!
 
     val directionChangeEnabledData = MutableLiveData<Boolean>()
 
@@ -52,7 +52,7 @@ class EnterAmountSharedViewModel(application: Application) : AndroidViewModel(ap
 
     val messageTextStringData = MutableLiveData<CharSequence>()
 
-    val changeDashAmountEvent = SingleLiveEvent<Coin>()
+    val changeXazabAmountEvent = SingleLiveEvent<Coin>()
 
     val applyMaxAmountEvent = SingleLiveEvent<Coin>()
 
@@ -66,6 +66,6 @@ class EnterAmountSharedViewModel(application: Application) : AndroidViewModel(ap
     }
 
     fun hasAmount(): Boolean {
-        return Coin.ZERO.isLessThan(dashAmountData.value)
+        return Coin.ZERO.isLessThan(xazabAmountData.value)
     }
 }

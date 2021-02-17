@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import org.bitcoinj.core.CoinDefinition;
 import org.bitcoinj.protocols.payments.PaymentProtocol;
-import org.dash.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.DialogBuilder;
 
 import de.schildbach.wallet.data.PaymentIntent;
 import de.schildbach.wallet.integration.android.BitcoinIntegration;
@@ -86,7 +86,7 @@ public class SendCoinsActivity extends AbstractBindServiceActivity {
 
             if ((Intent.ACTION_VIEW.equals(action) || NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action))
                     && intentUri != null && (CoinDefinition.coinURIScheme.equals(scheme) || ANYPAY_SCHEME.equals(scheme))) {
-                viewModel.initStateFromDashUri(intentUri);
+                viewModel.initStateFromXazabUri(intentUri);
 
             } else if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(action) && PaymentProtocol.MIMETYPE_PAYMENTREQUEST.equals(mimeType)) {
 

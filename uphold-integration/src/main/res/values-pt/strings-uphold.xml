@@ -2,13 +2,13 @@
 <resources>
 
     <string name="uphold_account">Uphold</string>
-    <string name="uphold_buy_dash_activity_title">Comprar/Vender Dash com Uphold</string>
-    <string name="uphold_buy_dash_with_uphold">Comprar Dash com conta Uphold</string>
-    <string name="uphold_buy_dash_button">Comprar Dash</string>
+    <string name="uphold_buy_xazab_activity_title">Comprar/Vender Xazab com Uphold</string>
+    <string name="uphold_buy_xazab_with_uphold">Comprar Xazab com conta Uphold</string>
+    <string name="uphold_buy_xazab_button">Comprar Xazab</string>
     <string name="uphold_transfer_to_this_wallet_button">Transferir de Uphold</string>
     <string name="uphold_link_account">Conectar Conta Uphold</string>
-    <string name="uphold_account_dash_balance">O saldo da sua conta Uphold é de</string>
-    <string name="uphold_transfer_to_this_wallet">Transferir Dash de sua conta Uphold para essa carteira</string>
+    <string name="uphold_account_xazab_balance">O saldo da sua conta Uphold é de</string>
+    <string name="uphold_transfer_to_this_wallet">Transferir Xazab de sua conta Uphold para essa carteira</string>
     <string name="uphold_withdrawal_deduct_fee_disclaimer">A taxa será deduzida do valor solicitado.</string>
     <string name="uphold_withdrawal_instructions">Insira o valor a ser transferido</string>
     <string name="uphold_withdrawal_success_title">Sucesso</string>
@@ -21,7 +21,7 @@
     <string name="uphold_logout_explanation_text">Também será necessário sair do site da Uphold utilizando seu navegador</string>
     <string name="uphold_logout_go_to_website">Ir para o site</string>
     <string name="uphold_error">Erro de Uphold</string>
-    <string name="uphold_error_not_logged_in">Sua conta de Uphold não está mais associada à Dash Wallet. Na próxima tela pressione "Associar conta de Uphold".</string>
+    <string name="uphold_error_not_logged_in">Sua conta de Uphold não está mais associada à Xazab Wallet. Na próxima tela pressione "Associar conta de Uphold".</string>
     <string name="uphold_error_not_available">O serviço de Uphold não está disponível. Tente novamente mais tarde por favor. </string>
     <string name="uphold_error_report_issue">Por favor reporte este problema usando a opção "Reportar Problema" no menu principal. </string>
 

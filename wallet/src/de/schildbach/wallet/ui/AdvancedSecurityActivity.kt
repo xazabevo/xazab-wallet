@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -61,7 +61,7 @@ class AdvancedSecurityActivity : BaseMenuActivity() {
             updateView()
         }
     }
-    private lateinit var dashSymbol: ImageSpan
+    private lateinit var xazabSymbol: ImageSpan
 
     override fun getLayoutId(): Int {
         return R.layout.activity_advanced_security
@@ -70,10 +70,10 @@ class AdvancedSecurityActivity : BaseMenuActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val drawableDash = ResourcesCompat.getDrawable(resources,
-                R.drawable.ic_dash_d_black, null)
-        drawableDash!!.setBounds(0, 0, 32, 32)
-        dashSymbol = ImageSpan(drawableDash, ImageSpan.ALIGN_BASELINE)
+        val drawableXazab = ResourcesCompat.getDrawable(resources,
+                R.drawable.ic_xazab_d_black, null)
+        drawableXazab!!.setBounds(0, 0, 32, 32)
+        xazabSymbol = ImageSpan(drawableXazab, ImageSpan.ALIGN_BASELINE)
 
         auto_logout_switch.setOnCheckedChangeListener { _, enabled ->
             configuration.autoLogoutEnabled = enabled
@@ -161,7 +161,7 @@ class AdvancedSecurityActivity : BaseMenuActivity() {
             } else {
                 val builder = SpannableStringBuilder()
                 builder.append(getText(R.string.spending_confirmation_hint_above_zero)).append("  ")
-                builder.setSpan(dashSymbol, builder.length - 1, builder.length, 0)
+                builder.setSpan(xazabSymbol, builder.length - 1, builder.length, 0)
                 builder.append(" ").append(biometric_limit_value.text)
                 spending_confirmation_hint.text = builder
             }
@@ -179,11 +179,11 @@ class AdvancedSecurityActivity : BaseMenuActivity() {
             else -> R.string.security_very_high
         })
         security_level.setTextColor(ResourcesCompat.getColor(resources, when(securityLevel) {
-            SecurityLevel.NONE -> R.color.dash_red
-            SecurityLevel.LOW -> R.color.dash_orange
-            SecurityLevel.MEDIUM -> R.color.dash_orange
-            SecurityLevel.HIGH -> R.color.dash_blue
-            else -> R.color.dash_green
+            SecurityLevel.NONE -> R.color.xazab_red
+            SecurityLevel.LOW -> R.color.xazab_orange
+            SecurityLevel.MEDIUM -> R.color.xazab_orange
+            SecurityLevel.HIGH -> R.color.xazab_blue
+            else -> R.color.xazab_green
         }, null))
         security_icon.setImageResource(when(securityLevel) {
             SecurityLevel.NONE -> R.drawable.security_filled_red

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -146,7 +146,7 @@ open class CheckPinDialog : DialogFragment() {
 
             }
         }
-        pin_preview.setTextColor(R.color.dash_light_gray)
+        pin_preview.setTextColor(R.color.xazab_light_gray)
         pin_preview.hideForgotPinAction()
         setState(State.ENTER_PIN)
 

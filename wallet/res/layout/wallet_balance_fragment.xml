@@ -11,8 +11,8 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <org.dash.wallet.common.ui.CurrencyTextView
-            android:id="@+id/wallet_balance_dash"
+        <org.xazab.wallet.common.ui.CurrencyTextView
+            android:id="@+id/wallet_balance_xazab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white" />
@@ -29,7 +29,7 @@
             android:visibility="gone"
             style="@style/MontserratMedium"/>
 
-        <org.dash.wallet.common.ui.CurrencyTextView
+        <org.xazab.wallet.common.ui.CurrencyTextView
             android:id="@+id/wallet_balance_local"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

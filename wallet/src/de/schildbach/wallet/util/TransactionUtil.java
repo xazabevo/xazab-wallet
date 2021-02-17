@@ -72,7 +72,7 @@ public class TransactionUtil {
                 errorNameId = R.string.transaction_row_status_error_conflicting;
             } else if(confidence.getConfidenceType() != TransactionConfidence.ConfidenceType.BUILDING) {
                 //
-                // Handle errors from the Dash Network
+                // Handle errors from the Xazab Network
                 //
                 RejectedTransactionException exception = confidence.getRejectedTransactionException();
                 if (exception != null) {

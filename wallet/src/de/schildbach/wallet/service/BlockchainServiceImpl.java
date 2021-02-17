@@ -80,7 +80,7 @@ import org.bitcoinj.utils.ExchangeRate;
 import org.bitcoinj.utils.MonetaryFormat;
 import org.bitcoinj.utils.Threading;
 import org.bitcoinj.wallet.Wallet;
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -118,7 +118,7 @@ import de.schildbach.wallet.util.ThrottlingWalletChangeListener;
 import de.schildbach.wallet.util.WalletUtils;
 import de.schildbach.wallet_test.R;
 
-import static org.dash.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
+import static org.xazab.wallet.common.Constants.PREFIX_ALMOST_EQUAL_TO;
 
 /**
  * @author Andreas Schildbach
@@ -151,7 +151,7 @@ public class BlockchainServiceImpl extends LifecycleService implements Blockchai
     private boolean resetBlockchainOnShutdown = false;
     private boolean deleteWalletFileOnShutdown = false;
 
-    //Settings to bypass dashj default dns seeds
+    //Settings to bypass xazabj default dns seeds
     private final SeedPeers seedPeerDiscovery = new SeedPeers(Constants.NETWORK_PARAMETERS);
     private final DnsDiscovery dnsDiscovery = new DnsDiscovery(Constants.DNS_SEED, Constants.NETWORK_PARAMETERS);
     ArrayList<PeerDiscovery> peerDiscoveryList = new ArrayList<>(2);
@@ -272,7 +272,7 @@ public class BlockchainServiceImpl extends LifecycleService implements Blockchai
 
         final NotificationCompat.Builder notification = new NotificationCompat.Builder(this,
                 Constants.NOTIFICATION_CHANNEL_ID_TRANSACTIONS);
-        notification.setSmallIcon(R.drawable.ic_dash_d_white_bottom);
+        notification.setSmallIcon(R.drawable.ic_xazab_d_white_bottom);
         notification.setTicker(tickerMsg);
         notification.setContentTitle(msg);
         if (text.length() > 0)
@@ -776,7 +776,7 @@ public class BlockchainServiceImpl extends LifecycleService implements Blockchai
 
         registerReceiver(tickReceiver, new IntentFilter(Intent.ACTION_TIME_TICK));
 
-        wallet.getContext().initDashSync(getDir("masternode", MODE_PRIVATE).getAbsolutePath());
+        wallet.getContext().initXazabSync(getDir("masternode", MODE_PRIVATE).getAbsolutePath());
 
         peerDiscoveryList.add(dnsDiscovery);
         updateAppWidget();
@@ -891,12 +891,12 @@ public class BlockchainServiceImpl extends LifecycleService implements Blockchai
             application.saveWallet();
         }
 
-        //Dash Specific
+        //Xazab Specific
 
         //Constants.NETWORK_PARAMETERS.masternodeDB.write(Constants.NETWORK_PARAMETERS.masternodeManager);
         //application.saveMasternodes();
 
-        //Dash Specific
+        //Xazab Specific
 
         if (wakeLock.isHeld()) {
             log.debug("wakelock still held, releasing");
@@ -951,7 +951,7 @@ public class BlockchainServiceImpl extends LifecycleService implements Blockchai
 
         return new NotificationCompat.Builder(this,
                 Constants.NOTIFICATION_CHANNEL_ID_ONGOING)
-                .setSmallIcon(R.drawable.ic_dash_d_white_bottom)
+                .setSmallIcon(R.drawable.ic_xazab_d_white_bottom)
                 .setContentTitle(getString(R.string.app_name))
                 .setContentText(message)
                 .setContentIntent(pendingIntent).build();

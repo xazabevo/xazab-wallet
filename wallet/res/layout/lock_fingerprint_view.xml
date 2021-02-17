@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:minLines="2"
-        android:textColor="@color/dash_white"
+        android:textColor="@color/xazab_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fingerprint_icon" />

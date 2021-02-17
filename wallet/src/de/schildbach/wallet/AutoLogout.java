@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ package de.schildbach.wallet;
 import android.content.SharedPreferences;
 import android.os.Handler;
 
-import org.dash.wallet.common.Configuration;
+import org.xazab.wallet.common.Configuration;
 
 import java.util.concurrent.TimeUnit;
 

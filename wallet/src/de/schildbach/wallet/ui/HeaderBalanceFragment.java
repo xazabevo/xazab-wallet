@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,9 +36,9 @@ import androidx.loader.content.Loader;
 import org.bitcoinj.core.Coin;
 import org.bitcoinj.utils.Fiat;
 import org.bitcoinj.wallet.Wallet;
-import org.dash.wallet.common.Configuration;
-import org.dash.wallet.common.ui.CurrencyTextView;
-import org.dash.wallet.common.util.GenericUtils;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.util.GenericUtils;
 
 import javax.annotation.Nullable;
 
@@ -63,7 +63,7 @@ public final class HeaderBalanceFragment extends Fragment {
     private TextView hideShowBalanceHint;
     private TextView caption;
     private View view;
-    private CurrencyTextView viewBalanceDash;
+    private CurrencyTextView viewBalanceXazab;
     private CurrencyTextView viewBalanceLocal;
 
     private boolean showLocalBalance;
@@ -117,8 +117,8 @@ public final class HeaderBalanceFragment extends Fragment {
         this.view = view;
         showBalanceButton = view.findViewById(R.id.show_balance_button);
 
-        viewBalanceDash = view.findViewById(R.id.wallet_balance_dash);
-        viewBalanceDash.setApplyMarkup(false);
+        viewBalanceXazab = view.findViewById(R.id.wallet_balance_xazab);
+        viewBalanceXazab.setApplyMarkup(false);
 
         viewBalanceLocal = view.findViewById(R.id.wallet_balance_local);
         viewBalanceLocal.setInsignificantRelativeSize(1);
@@ -207,9 +207,9 @@ public final class HeaderBalanceFragment extends Fragment {
             viewBalanceLocal.setVisibility(View.GONE);
 
         if (balance != null) {
-            viewBalanceDash.setVisibility(View.VISIBLE);
-            viewBalanceDash.setFormat(config.getFormat().noCode());
-            viewBalanceDash.setAmount(balance);
+            viewBalanceXazab.setVisibility(View.VISIBLE);
+            viewBalanceXazab.setFormat(config.getFormat().noCode());
+            viewBalanceXazab.setAmount(balance);
 
             if (showLocalBalance) {
                 if (exchangeRate != null) {
@@ -225,7 +225,7 @@ public final class HeaderBalanceFragment extends Fragment {
                 }
             }
         } else {
-            viewBalanceDash.setVisibility(View.INVISIBLE);
+            viewBalanceXazab.setVisibility(View.INVISIBLE);
         }
 
         activity.invalidateOptionsMenu();

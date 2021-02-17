@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/payments_pay_by_qr_title"
-            android:textColor="@color/dash_gray"
+            android:textColor="@color/xazab_gray"
             android:textSize="14sp" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:ellipsize="middle"
             android:singleLine="true"
             android:text="@string/payments_pay_by_qr_sub_title"
-            android:textColor="@color/dash_black" />
+            android:textColor="@color/xazab_black" />
 
     </LinearLayout>
 

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
     android:background="@android:color/transparent"
-    tools:background="@color/dash_deep_blue"
+    tools:background="@color/xazab_deep_blue"
     tools:context="de.schildbach.wallet.ui.OnboardingActivity">
 
     <ImageView
@@ -30,18 +30,18 @@
             android:layout_gravity="center"
             android:layout_marginBottom="128dp"
             android:text="@string/perm_lock_info"
-            android:textColor="@color/dash_white" />
+            android:textColor="@color/xazab_white" />
 
         <Button
             android:id="@+id/wipe_wallet"
-            style="@style/DashButton.Blue"
+            style="@style/XazabButton.Blue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/perm_lock_wipe_wallet" />
 
         <Button
             android:id="@+id/close_app"
-            style="@style/DashButton.Transparent"
+            style="@style/XazabButton.Transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

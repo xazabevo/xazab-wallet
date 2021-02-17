@@ -60,10 +60,10 @@ import org.bitcoinj.wallet.SendRequest;
 import org.bitcoinj.wallet.Wallet;
 import org.bitcoinj.wallet.Wallet.BalanceType;
 import org.bitcoinj.wallet.WalletTransaction;
-import org.dash.wallet.common.Configuration;
-import org.dash.wallet.common.ui.CurrencyTextView;
-import org.dash.wallet.common.ui.DialogBuilder;
-import org.dash.wallet.common.ui.FancyAlertDialog;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.ui.CurrencyTextView;
+import org.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.common.ui.FancyAlertDialog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

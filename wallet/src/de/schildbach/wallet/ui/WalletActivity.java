@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -67,11 +67,11 @@ import org.bitcoinj.core.Transaction;
 import org.bitcoinj.core.VerificationException;
 import org.bitcoinj.crypto.ChildNumber;
 import org.bitcoinj.wallet.Wallet;
-import org.dash.wallet.common.Configuration;
-import org.dash.wallet.common.UserInteractionAwareCallback;
-import org.dash.wallet.common.data.CurrencyInfo;
-import org.dash.wallet.common.ui.DialogBuilder;
-import org.dash.wallet.integration.uphold.ui.UpholdAccountActivity;
+import org.xazab.wallet.common.Configuration;
+import org.xazab.wallet.common.UserInteractionAwareCallback;
+import org.xazab.wallet.common.data.CurrencyInfo;
+import org.xazab.wallet.common.ui.DialogBuilder;
+import org.xazab.wallet.integration.uphold.ui.UpholdAccountActivity;
 
 import java.io.IOException;
 import java.util.Currency;
@@ -933,7 +933,7 @@ public final class WalletActivity extends AbstractBindServiceActivity
         startActivity(UpholdAccountActivity.createIntent(this, wallet));
     }
 
-    //Dash Specific
+    //Xazab Specific
     private void handleDisconnect() {
         getWalletApplication().stopBlockchainService();
         finish();
@@ -1014,7 +1014,7 @@ public final class WalletActivity extends AbstractBindServiceActivity
             syncStatusMessage.setText(R.string.sync_status_sync_completed);
             updateSyncPaneVisibility(R.id.sync_status_pane, false);
         } else {
-            syncPercentageView.setTextColor(getResources().getColor(R.color.dash_gray));
+            syncPercentageView.setTextColor(getResources().getColor(R.color.xazab_gray));
             updateSyncPaneVisibility(R.id.sync_status_pane, true);
             syncStatusTitle.setText(R.string.sync_status_syncing_title);
             syncStatusMessage.setText(R.string.sync_status_syncing_sub_title);

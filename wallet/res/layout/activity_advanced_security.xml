@@ -39,7 +39,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:text="@string/advanced_security_security_level"
-                android:textColor="@color/dash_gray"
+                android:textColor="@color/xazab_gray"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -260,7 +260,7 @@
                         app:layout_constraintBottom_toBottomOf="@id/biometric_limit_value"
                         app:layout_constraintEnd_toStartOf="@id/biometric_limit_value"
                         app:layout_constraintTop_toTopOf="@id/biometric_limit_value"
-                        app:srcCompat="@drawable/ic_dash_d_black"
+                        app:srcCompat="@drawable/ic_xazab_d_black"
                         tools:ignore="ContentDescription" />
 
                     <ImageView
@@ -272,7 +272,7 @@
                         android:layout_marginTop="24dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/biometric_limit_value"
-                        app:srcCompat="@drawable/ic_dash_d_gray"
+                        app:srcCompat="@drawable/ic_xazab_d_gray"
                         tools:ignore="ContentDescription" />
 
                     <TextView
@@ -310,7 +310,7 @@
                         app:layout_constraintBottom_toBottomOf="@id/biometric_limit_max"
                         app:layout_constraintEnd_toStartOf="@id/biometric_limit_max"
                         app:layout_constraintTop_toTopOf="@id/biometric_limit_max"
-                        app:srcCompat="@drawable/ic_dash_d_gray"
+                        app:srcCompat="@drawable/ic_xazab_d_gray"
                         tools:ignore="ContentDescription" />
 
 
@@ -349,7 +349,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Button
-                style="@style/DashButton.Transparent"
+                style="@style/XazabButton.Transparent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -357,7 +357,7 @@
                 android:layout_marginBottom="25dp"
                 android:onClick="resetToDefault"
                 android:text="@string/reset_to_default"
-                android:textColor="@color/dash_blue"
+                android:textColor="@color/xazab_blue"
                 android:textSize="15sp" />
 
         </LinearLayout>

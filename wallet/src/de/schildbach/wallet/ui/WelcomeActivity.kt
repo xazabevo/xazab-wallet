@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ import androidx.viewpager.widget.ViewPager
 import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_welcome.*
-import org.dash.wallet.common.Configuration
+import org.xazab.wallet.common.Configuration
 
 /**
  * @author Samuel Barbosa

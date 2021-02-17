@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -65,11 +65,11 @@ class PaymentsButtonView(context: Context, attrs: AttributeSet?) : ConstraintLay
 
     fun setActive(active: Boolean) {
         if (active) {
-            val subTitleColor = ResourcesCompat.getColor(resources, R.color.dash_black, null)
+            val subTitleColor = ResourcesCompat.getColor(resources, R.color.xazab_black, null)
             sub_title_view.setTextColor(subTitleColor)
             sub_title_view.textSize = convertPixelsToDp(defaultSybTitleSize)
         } else {
-            val subTitleColor = ResourcesCompat.getColor(resources, R.color.dash_gray, null)
+            val subTitleColor = ResourcesCompat.getColor(resources, R.color.xazab_gray, null)
             sub_title_view.setTextColor(subTitleColor)
             sub_title_view.textSize = convertPixelsToDp(defaultSybTitleSize) * 0.8f
         }

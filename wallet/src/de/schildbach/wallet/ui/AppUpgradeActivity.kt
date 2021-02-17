@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Dash Core Group
+ * Copyright 2020 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ import de.schildbach.wallet.ui.security.SecurityGuard
 import de.schildbach.wallet.ui.widget.PinPreviewView
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_app_update.*
-import org.dash.wallet.common.Configuration
+import org.xazab.wallet.common.Configuration
 import java.util.concurrent.TimeUnit
 
 class AppUpgradeActivity : AppCompatActivity() {
@@ -78,7 +78,7 @@ class AppUpgradeActivity : AppCompatActivity() {
 
     private fun askForPin() {
         title_pane.visibility = View.INVISIBLE
-        dash_logo.visibility = View.INVISIBLE
+        xazab_logo.visibility = View.INVISIBLE
         val checkPinSharedModel = ViewModelProviders.of(this)[CheckPinSharedModel::class.java]
         checkPinSharedModel.onCorrectPinCallback.observe(this, Observer<Pair<Int?, String?>> { (_, pin) ->
             onCorrectPin(pin!!)
@@ -103,7 +103,7 @@ class AppUpgradeActivity : AppCompatActivity() {
 
     private fun walletLocked() {
         title_pane.visibility = View.VISIBLE
-        dash_logo.visibility = View.VISIBLE
+        xazab_logo.visibility = View.VISIBLE
         temporaryLockCheckHandler.postDelayed(temporaryLockCheckRunnable, temporaryLockCheckInterval)
         action_title.setText(R.string.wallet_lock_wallet_disabled)
         action_subtitle.text = pinRetryController.getWalletTemporaryLockedMessage(this)

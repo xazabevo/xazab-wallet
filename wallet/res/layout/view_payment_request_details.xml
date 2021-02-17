@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dash_white"
+    android:background="@color/xazab_white"
     android:orientation="vertical"
     tools:ignore="ContentDescription,HardcodedText">
 
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/dialog_confirm_confirm"
-            android:textColor="@color/dash_black"
+            android:textColor="@color/xazab_black"
             android:textSize="18sp" />
 
     </FrameLayout>
@@ -55,13 +55,13 @@
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:id="@+id/input_code_dash"
+                android:id="@+id/input_code_xazab"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="8dp"
-                app:srcCompat="@drawable/ic_dash_d_black" />
+                app:srcCompat="@drawable/ic_xazab_d_black" />
 
             <TextView
                 android:id="@+id/input_value"
@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="0.00"
-                android:textColor="@color/dash_black"
+                android:textColor="@color/xazab_black"
                 android:textSize="36sp" />
 
         </LinearLayout>
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$"
-                android:textColor="@color/dash_gray"
+                android:textColor="@color/xazab_gray"
                 android:textSize="24sp" />
 
             <TextView
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0.00"
-                android:textColor="@color/dash_gray"
+                android:textColor="@color/xazab_gray"
                 android:textSize="24sp" />
 
         </LinearLayout>
@@ -119,7 +119,7 @@
             app:drawableStartCompat="@drawable/ic_secured_by"
             android:drawablePadding="4dp"
             android:text="@string/dialog_confirm_secured_by"
-            android:textColor="@color/dash_gray" />
+            android:textColor="@color/xazab_gray" />
 
         <TextView
             android:id="@+id/payee_secured_by"
@@ -130,7 +130,7 @@
             android:marqueeRepeatLimit="1"
             android:singleLine="true"
             android:text="Digital Signature Trust CO."
-            android:textColor="@color/dash_black"
+            android:textColor="@color/xazab_black"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -150,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:maxLines="2"
-            android:textColor="@color/dash_black"
+            android:textColor="@color/xazab_black"
             android:textSize="16sp"
             tools:text="Pay 0.11 USD to MasksDelivery | Anypay.com" />
 
@@ -171,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/dialog_confirm_fee"
-            android:textColor="@color/dash_gray"
+            android:textColor="@color/xazab_gray"
             android:textSize="16sp" />
 
         <ImageView
@@ -179,7 +179,7 @@
             android:layout_height="match_parent"
             android:layout_marginEnd="4dp"
             android:paddingTop="1dp"
-            app:srcCompat="@drawable/ic_dash_d_black" />
+            app:srcCompat="@drawable/ic_xazab_d_black" />
 
         <TextView
             android:id="@+id/transaction_fee"
@@ -190,7 +190,7 @@
             android:ellipsize="middle"
             android:singleLine="true"
             android:text="0.0001"
-            android:textColor="@color/dash_black"
+            android:textColor="@color/xazab_black"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -210,7 +210,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/dialog_confirm_total"
-            android:textColor="@color/dash_gray"
+            android:textColor="@color/xazab_gray"
             android:textSize="16sp" />
 
         <ImageView
@@ -218,7 +218,7 @@
             android:layout_height="match_parent"
             android:layout_marginEnd="4dp"
             android:paddingTop="1dp"
-            app:srcCompat="@drawable/ic_dash_d_black" />
+            app:srcCompat="@drawable/ic_xazab_d_black" />
 
         <TextView
             android:id="@+id/total_amount"
@@ -229,7 +229,7 @@
             android:ellipsize="middle"
             android:singleLine="true"
             android:text="1.234"
-            android:textColor="@color/dash_black"
+            android:textColor="@color/xazab_black"
             android:textSize="16sp"
             tools:ignore="HardcodedText" />
 
@@ -237,7 +237,7 @@
 
     <Button
         android:id="@+id/confirm_payment"
-        style="@style/DashButton.Blue"
+        style="@style/XazabButton.Blue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"

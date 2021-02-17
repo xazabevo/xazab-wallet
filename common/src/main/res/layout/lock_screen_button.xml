@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/transparent_button_background"
     android:orientation="vertical"
-    tools:context="org.dash.wallet.ui.widget.LockScreenButton"
+    tools:context="org.xazab.wallet.ui.widget.LockScreenButton"
     tools:ignore="UseCompoundDrawables"
     tools:parentTag="android.widget.LinearLayout">
 
@@ -28,7 +28,7 @@
         android:maxLines="2"
         android:minLines="2"
         android:text="Quick\nReceive"
-        android:textColor="@color/dash_white"
+        android:textColor="@color/xazab_white"
         android:textSize="14sp" />
 
 </merge>

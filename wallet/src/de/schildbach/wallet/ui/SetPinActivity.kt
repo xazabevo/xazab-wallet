@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ import de.schildbach.wallet.ui.preference.PinRetryController
 import de.schildbach.wallet.ui.widget.NumericKeyboardView
 import de.schildbach.wallet.ui.widget.PinPreviewView
 import de.schildbach.wallet_test.R
-import org.dash.wallet.common.InteractionAwareActivity
+import org.xazab.wallet.common.InteractionAwareActivity
 
 class SetPinActivity : InteractionAwareActivity() {
 
@@ -146,7 +146,7 @@ class SetPinActivity : InteractionAwareActivity() {
         confirmButtonView = findViewById(R.id.btn_confirm)
         numericKeyboardView = findViewById(R.id.numeric_keyboard)
 
-        pinPreviewView.setTextColor(R.color.dash_light_gray)
+        pinPreviewView.setTextColor(R.color.xazab_light_gray)
         pinPreviewView.hideForgotPinAction()
 
         numericKeyboardView.setFunctionEnabled(false)

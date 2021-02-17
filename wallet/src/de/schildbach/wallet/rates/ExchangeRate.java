@@ -9,7 +9,7 @@ import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 import org.bitcoinj.utils.Fiat;
-import org.dash.wallet.common.data.CurrencyInfo;
+import org.xazab.wallet.common.data.CurrencyInfo;
 
 import java.math.BigDecimal;
 import java.util.Currency;

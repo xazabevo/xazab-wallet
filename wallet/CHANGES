@@ -1,7 +1,7 @@
-Dash Wallet
+Xazab Wallet
 v7.2.3
 * Add import private key from shared image
-* use DashJ 0.17.6
+* use XazabJ 0.17.6
 
 v7.2.2
 * Fix crashes on Import Private Key, Backup to File failures
@@ -17,10 +17,10 @@ v7.2.0
 * Update translations
 * Built for SDK 29 (Android 10)
 * Update dependencies
-* Use DashJ 0.17.5 (uses protobuf-javalite)
+* Use XazabJ 0.17.5 (uses protobuf-javalite)
 
 v7.1.0
-* Use DashJ 0.17.4 (full chainlock support, Dash Core 0.16 updates)
+* Use XazabJ 0.17.4 (full chainlock support, Xazab Core 0.16 updates)
 * BIP70: don't send tx if rejected by payment server
 * Save backup file without PIN (resolves issues when restoring backups in v7+)
 * Update Advanced Security Screen to support smaller devices
@@ -45,7 +45,7 @@ v7.0.9
 v7.0.8
 * Support restoration from non-english recovery phrases
 * Fix app start crash on new installs
-* Support better Uphold error handling (show more detailed messages).  The most common failure on transferring Dash is due to a required 24 hour delay after purchasing using a bank transfer
+* Support better Uphold error handling (show more detailed messages).  The most common failure on transferring Xazab is due to a required 24 hour delay after purchasing using a bank transfer
 
 v7.0.7
 * Fix layout issues on More and Settings Screens for other languages with longer text
@@ -54,9 +54,9 @@ v7.0.7
 * Fix blockchain service crashes on Android 8.1
 
 v7.0.6
-* Handle Dash payment requests and addresses in HTML clipboard format
+* Handle Xazab payment requests and addresses in HTML clipboard format
 * Properly format authentication dialog
-* Center Dash Logo on Home Screen
+* Center Xazab Logo on Home Screen
 * Add contact support to More menu
 * BIP70: add support for pay: uri's
 * Fix crash when importing private key
@@ -72,7 +72,7 @@ v7.0.5
 * Prevent Notifications from keeping the app open
 * Fix Network Monitor that would not update as blocks were downloaded
 * Add complete BIP70 support
-* Fix crashes related to InstantSend and Chainlocks with dashj 0.17.1
+* Fix crashes related to InstantSend and Chainlocks with xazabj 0.17.1
 * Update gradle components
 
 v7.0.4
@@ -109,7 +109,7 @@ v6.6.4
   This caused many bugs on the Send and Request screens
 
 v6.6.3
-* Use DashJ 0.16.4
+* Use XazabJ 0.16.4
     * Reduces memory usage
     * Fixes several crashes
 * Fix several Fingerprint issues
@@ -117,7 +117,7 @@ v6.6.3
 * Update Translations
 
 v6.6.2
-* Use DashJ 0.16.2
+* Use XazabJ 0.16.2
     * Improves processing of ChainLocks and InstantSendLocks
     * Fixes several crashes
 * Add Log out command to Uphold screen
@@ -130,21 +130,21 @@ v6.6.1
 
 v6.6.0
 * Hide Settings, Diagnostics, Uphold when app is locked
-* Change price sourcing to use DashRetain (primary)
+* Change price sourcing to use XazabRetain (primary)
 * Upgrade gradle for building
 * Remove LeakCanary on debug builds
 * Add multidex support
 * Add Firebase In-App Messaging (notifications, app updates)
 
 v6.5.1
-* Use DashJ 0.16.1
+* Use XazabJ 0.16.1
 * Fix several crashes from resetting the blockchain and restoring backups
-* Update native dashjbls code for dashj 0.16.1
+* Update native xazabjbls code for xazabj 0.16.1
 * Network Monitor:  Fix displaying of Chainlocks/DMN Lists on blocks with transactions
 * Add bootstrap DMN List file to reduce bandwidth usage and speed up DMN sync
 
 v6.5.0
-* Use DashJ 0.16 (supports DIP8, Chainlocks, InstantSendLocks)
+* Use XazabJ 0.16 (supports DIP8, Chainlocks, InstantSendLocks)
 * Send screen changes when InstantSendLocks (Spork 20) are activated
 
 v6.4.5
@@ -166,7 +166,7 @@ v6.4.3
 * Fix Paper Wallet Sweep Crash from invalid electrum response
 * Support self-signed SSL certificates for connecting to electrum servers.
 * Reduces the likelyhood of slow sending
-* Update to DashJ 0.15.3
+* Update to XazabJ 0.15.3
     - Optimize handling of DMN Lists to speed up sending
 
 v6.4.2
@@ -178,20 +178,20 @@ v6.4.2
 * Won't put incorrect fiat values on transactions when the value is not available
 * Show "----" for the fiat value when those values cannot be determined
 * Simplify Settings Menu
-* Update to DashJ 0.15.2
+* Update to XazabJ 0.15.2
     - Resolve some spork 15 issues
 
 v6.4.1
-* Update to DashJ 0.15.1
-    - Improve connectivity to the Dash Network
+* Update to XazabJ 0.15.1
+    - Improve connectivity to the Xazab Network
     - DMN List fix
 * Fix fingerprint crash (Android 7)
 * Fix crash when restoring backup file from before May 2018
 * Fix crash when scanning QR code if the user denies camera access (Android 6)
 
 v6.4.0
-* Support Dash Core 0.13 (InstantSend, BLS, ...)
-    with dashj 0.15 (dashj-core and dashj-bls)
+* Support Xazab Core 0.13 (InstantSend, BLS, ...)
+    with xazabj 0.15 (xazabj-core and xazabj-bls)
 * Update UI for InstantSend / Autolocks
 * Fix rare bug when sending transactions (dust)
 * Optimize X11 hash algorithm
@@ -208,7 +208,7 @@ v6.3.0
 * Fix for Uphold Integration login using custom tabs/external browser
 * Fix context menu of icon
 * Prevent brute forcing PIN
-* Change support email to support@dash.org
+* Change support email to support@xazab.xyz
 
 v6.2.1
 * Fix crash on Android 9 (API 28)
@@ -216,7 +216,7 @@ v6.2.1
 v6.2.0
 * Target API 28
 * Add Adaptive Icons
-* Use DashJ 0.14.7
+* Use XazabJ 0.14.7
 
 v6.1.2 (Hotfix)
 * Wipe Wallet after 8 incorrect PIN entries.
@@ -246,7 +246,7 @@ v5.18.3
 * Add Travis CI
 * Detect Local currency (upgrade from previous version)
 * Back on navigation menu closes the menu
-* Use dashj 0.14.4.7 (Seed List, changes for sending transactions)
+* Use xazabj 0.14.4.7 (Seed List, changes for sending transactions)
 * Changes to Transaction State messages
 * Add VES currency
 * Updated Translations
@@ -254,7 +254,7 @@ v5.18.3
 * If DNS seeders fail, use seed list
 
 v5.18.2
-* Update for Dash Core 0.12.3.x network upgrade
+* Update for Xazab Core 0.12.3.x network upgrade
 * Send transactions if at least 1 connected peer
 * Backup Recovery Phrase dialog, change OK to Dismiss
 * Fix file attachment issues with GMail app
@@ -270,7 +270,7 @@ v5.18.1
 v5.18
 * Lock Feature - for security and privacy
 * BIP44 support
-* Use latest DASH price for exchange rates
+* Use latest XAZAB price for exchange rates
 * Allow sending coins from 0-conf transactions
 
 v5.17.6
@@ -303,7 +303,7 @@ v5.17.1
 * Fix crash on exchange rate retrieval (rare)
 
 v5.17.0
-* Dash Core 12.2 support
+* Xazab Core 12.2 support
 * Add backup site for exchange rates.
 * Fixes for Bugs.
 
@@ -321,7 +321,7 @@ v5.14.3
 v5.14.2
 * Fix crashing from recycle view
 * Fix crash on showing keyboard on Restore from recovery seed
-* Replace BTC with DASH on leftovers from last merge.
+* Replace BTC with XAZAB on leftovers from last merge.
 * Fix Italian translation
 * Prevent another crash with numbers entered
 
@@ -340,7 +340,7 @@ v5.14
 v4.65.12.1N
 * Updated Translations
 v4.65.12.1M
-* Updated for Dash Core 12.1
+* Updated for Xazab Core 12.1
 
 v4.65.12E
 * Partial Support for QR Codes requesting InstantSend
@@ -402,7 +402,7 @@ v0.10.2
 * updated for RC2.
 
 v0.1.1
-* updated all icons for Dash
+* updated all icons for Xazab
 
 v0.1.0
 * First version
@@ -425,14 +425,14 @@ v0.1.2-beta
 * added two nodes from a list of addnodes from the bitcointalk topic
 
 v0.1.1-beta
-* renamed to hashengineering.digitalcoin.wallet
+* renamed to xazabevo.digitalcoin.wallet
 * added support for importing Bitcoin Private Keys from first digitalcoin app (Crypto-Expert)
 
 v1.0.1.5
 * Fixed menu item doubling on rotate in address screen - langerhans (https://github.com/langerhans/dogecoin-wallet-new)
 * replaced block explorer with blockr.io instead of the apparently dead dgc.cryptocoinexplorer.com
 * Added BTER as a backup for getting exchange rates
-* added mDASH as an exchange rate.
+* added mXAZAB as an exchange rate.
 * added Disconnect feature back in
 * updated to bitcoin-wallet v3.39
 
@@ -756,7 +756,7 @@ v4.32
 
 * Bugfixes.
 * In-app payments integration (integration-android) now available on Maven Central and jCenter.
-  Also see: https://github.com/HashEngineering/dash-wallet/wiki/InAppPayments
+  Also see: https://github.com/xazabevo/xazab-wallet/wiki/InAppPayments
 
 v4.31
 
@@ -1035,7 +1035,7 @@ v3.41-v3.43
 
 v3.40
 
-* Support for µDASH denomination, for people who are used to low valued currencies.
+* Support for µXAZAB denomination, for people who are used to low valued currencies.
 * Always use BIP70 when sending payments directly via Bluetooth.
 * Small bugfixes.
 
@@ -1077,7 +1077,7 @@ v3.32
 
 v3.31
 
-* Default denomination has changed to millibitcoin (mDASH).
+* Default denomination has changed to millibitcoin (mXAZAB).
 * Cross-calculated exchange rates for currencies without Bitcoin volume. Thanks to BitcoinAverage.
 * Better handling of errors when sending coins, specifically when funds are exceeded.
 * Labs: Uses BIP70 payment protocol for tap-to-pay and scan-to-pay, if enabled in the settings.
@@ -1113,7 +1113,7 @@ v3.26
 
 v3.25
 
-* support for mDASH denomination
+* support for mXAZAB denomination
 * also use weighted exchange rates from BitcoinAverage
 * fixed issue with camera autofocus on some Samsung Galaxy devices
 

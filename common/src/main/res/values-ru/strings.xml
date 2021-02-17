@@ -3,7 +3,7 @@
 
     <string name="loading">Загрузка…</string>
     <string name="loading_error">Произошла ошибка. Попробуйте ещё раз позже.</string>
-    <string name="dash_available">%1$s доступно</string>
+    <string name="xazab_available">%1$s доступно</string>
 
     <!-- Local Currency List: GGP -->
     <string name="currency_GGP">Гернсийский фунт</string>

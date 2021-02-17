@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ import de.schildbach.wallet.WalletApplication
 import de.schildbach.wallet_test.R
 import kotlinx.android.synthetic.main.activity_more.*
 import kotlinx.android.synthetic.main.activity_settings.*
-import org.dash.wallet.common.ui.DialogBuilder
+import org.xazab.wallet.common.ui.DialogBuilder
 import org.slf4j.LoggerFactory
 
 class SettingsActivity : BaseMenuActivity() {

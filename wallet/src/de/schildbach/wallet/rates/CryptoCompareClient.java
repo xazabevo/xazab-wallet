@@ -2,7 +2,7 @@ package de.schildbach.wallet.rates;
 
 import com.squareup.moshi.Moshi;
 
-import org.dash.wallet.common.data.BigDecimalAdapter;
+import org.xazab.wallet.common.data.BigDecimalAdapter;
 
 import java.io.IOException;
 
@@ -31,13 +31,13 @@ public class CryptoCompareClient extends RetrofitClient {
         super(baseUrl);
 
         Moshi moshi = moshiBuilder.add(new BigDecimalAdapter())
-                .add(new CryptoCompareDashBtcRateAdapter()).build();
+                .add(new CryptoCompareXazabBtcRateAdapter()).build();
         retrofit = retrofitBuilder.addConverterFactory(MoshiConverterFactory.create(moshi)).build();
         service = retrofit.create(CryptoCompareService.class);
     }
 
-    public Response<Rate> getDashCustomAverage() throws IOException {
-        return service.getDashCustomAverage().execute();
+    public Response<Rate> getXazabCustomAverage() throws IOException {
+        return service.getXazabCustomAverage().execute();
     }
 
     public Response<CryptoCompareVesBtcRate> getVESBTCRate() throws IOException {
@@ -45,8 +45,8 @@ public class CryptoCompareClient extends RetrofitClient {
     }
 
     private interface CryptoCompareService {
-        @GET("data/generateAvg?fsym=DASH&tsym=BTC&e=Binance,Kraken,Poloniex,Bitfinex")
-        Call<Rate> getDashCustomAverage();
+        @GET("data/generateAvg?fsym=XAZAB&tsym=BTC&e=Binance,Kraken,Poloniex,Bitfinex")
+        Call<Rate> getXazabCustomAverage();
 
         @GET("data/price?fsym=BTC&tsyms=VES")
         Call<CryptoCompareVesBtcRate> getVESBTCRate();

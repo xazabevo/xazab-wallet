@@ -7,7 +7,7 @@
 <!--- List related Stories: NMA-???? -->
 
 ## Related PR's and Dependencies
-<!--- Put links to other PR's here for dash-wallet, dashj, dpp, dapi-client, dashpay, etc -->
+<!--- Put links to other PR's here for xazab-wallet, xazabj, dpp, dapi-client, xazab, etc -->
 
 ## Screenshots / Videos
 <!--- Include screenshots or videos here if applicable -->

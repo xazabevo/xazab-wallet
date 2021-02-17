@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Dash Core Group
+ * Copyright 2019 Xazab Core Group
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ import org.bitcoinj.core.Coin
 import org.bitcoinj.core.Monetary
 import org.bitcoinj.utils.Fiat
 import org.bitcoinj.utils.MonetaryFormat
-import org.dash.wallet.common.util.GenericUtils
+import org.xazab.wallet.common.util.GenericUtils
 
 class EnterAmountFragment : Fragment() {
 
@@ -51,7 +51,7 @@ class EnterAmountFragment : Fragment() {
         }
     }
 
-    private val dashFormat = MonetaryFormat().noCode().minDecimals(6).optionalDecimals()
+    private val xazabFormat = MonetaryFormat().noCode().minDecimals(6).optionalDecimals()
     private val fiatFormat = Constants.LOCAL_FORMAT
 
     private lateinit var viewModel: EnterAmountViewModel
@@ -66,10 +66,10 @@ class EnterAmountFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         convert_direction.setOnClickListener {
-            viewModel.dashToFiatDirectionData.value = !viewModel.dashToFiatDirectionValue
+            viewModel.xazabToFiatDirectionData.value = !viewModel.xazabToFiatDirectionValue
         }
         confirm_button.setOnClickListener {
-            sharedViewModel.buttonClickEvent.call(sharedViewModel.dashAmount)
+            sharedViewModel.buttonClickEvent.call(sharedViewModel.xazabAmount)
         }
         max_button.setOnClickListener {
             sharedViewModel.maxButtonClickEvent.call(true)
@@ -93,7 +93,7 @@ class EnterAmountFragment : Fragment() {
                 val isFraction = value.indexOf(DECIMAL_SEPARATOR) > -1
                 if (isFraction) {
                     val lengthOfDecimalPart = value.length - value.indexOf(DECIMAL_SEPARATOR)
-                    val decimalsThreshold = if (viewModel.dashToFiatDirectionValue) 8 else 2
+                    val decimalsThreshold = if (viewModel.xazabToFiatDirectionValue) 8 else 2
                     if (lengthOfDecimalPart > decimalsThreshold) {
                         return
                     }
@@ -145,14 +145,14 @@ class EnterAmountFragment : Fragment() {
     fun applyNewValue(value: String) {
         input_amount.text = value
 
-        if (viewModel.dashToFiatDirectionValue) {
+        if (viewModel.xazabToFiatDirectionValue) {
 
-            val dashAmount = try {
+            val xazabAmount = try {
                 Coin.parseCoin(value)
             } catch (x: Exception) {
                 Coin.ZERO
             }
-            viewModel.dashAmountData.value = dashAmount
+            viewModel.xazabAmountData.value = xazabAmount
 
         } else {
 
@@ -182,25 +182,25 @@ class EnterAmountFragment : Fragment() {
 
         if (arguments != null) {
             val initialAmount = arguments!!.getSerializable(ARGUMENT_INITIAL_AMOUNT) as Monetary
-            viewModel.dashToFiatDirectionData.value = initialAmount is Coin
-            if (viewModel.dashToFiatDirectionValue) {
-                viewModel.dashAmountData.value = initialAmount as Coin
+            viewModel.xazabToFiatDirectionData.value = initialAmount is Coin
+            if (viewModel.xazabToFiatDirectionValue) {
+                viewModel.xazabAmountData.value = initialAmount as Coin
             } else {
                 viewModel.fiatAmountData.value = initialAmount as Fiat
             }
         } else {
-            viewModel.dashToFiatDirectionData.value = true
-            viewModel.dashAmountData.value = Coin.ZERO
+            viewModel.xazabToFiatDirectionData.value = true
+            viewModel.xazabAmountData.value = Coin.ZERO
         }
     }
 
     private fun initViewModels() {
         viewModel = ViewModelProviders.of(this)[EnterAmountViewModel::class.java]
 
-        viewModel.dashToFiatDirectionData.observe(viewLifecycleOwner, Observer {
+        viewModel.xazabToFiatDirectionData.observe(viewLifecycleOwner, Observer {
             if (it) {
-                val dashAmount = viewModel.dashAmountData.value!!
-                input_amount.text = if (dashAmount.isZero) "" else dashFormat.format(viewModel.dashAmountData.value)
+                val xazabAmount = viewModel.xazabAmountData.value!!
+                input_amount.text = if (xazabAmount.isZero) "" else xazabFormat.format(viewModel.xazabAmountData.value)
             } else {
                 val currencyCode = sharedViewModel.exchangeRateData.value?.currencyCode ?: viewModel.fiatAmountData.value!!.currencyCode
                 viewModel.fiatAmountData.value = Fiat.parseFiat(currencyCode, calc_amount.text.toString())
@@ -209,14 +209,14 @@ class EnterAmountFragment : Fragment() {
             viewModel.calculateDependent(sharedViewModel.exchangeRate)
             setupSymbolsVisibility()
         })
-        viewModel.dashAmountData.observe(viewLifecycleOwner, Observer {
-            if (!viewModel.dashToFiatDirectionValue) {
-                calc_amount.text = dashFormat.format(it)
+        viewModel.xazabAmountData.observe(viewLifecycleOwner, Observer {
+            if (!viewModel.xazabToFiatDirectionValue) {
+                calc_amount.text = xazabFormat.format(it)
             }
-            sharedViewModel.dashAmountData.value = it
+            sharedViewModel.xazabAmountData.value = it
         })
         viewModel.fiatAmountData.observe(viewLifecycleOwner, Observer {
-            if (viewModel.dashToFiatDirectionValue) {
+            if (viewModel.xazabToFiatDirectionValue) {
                 calc_amount.text = fiatFormat.format(it)
             }
             applyCurrencySymbol(GenericUtils.currencySymbol(it.currencyCode))
@@ -260,14 +260,14 @@ class EnterAmountFragment : Fragment() {
                 viewModel.calculateDependent(sharedViewModel.exchangeRate)
             }
         })
-        sharedViewModel.changeDashAmountEvent.observe(viewLifecycleOwner, Observer {
+        sharedViewModel.changeXazabAmountEvent.observe(viewLifecycleOwner, Observer {
             applyNewValue(it.toPlainString())
         })
 
         sharedViewModel.applyMaxAmountEvent.observe(viewLifecycleOwner, Observer {
             maxAmountSelected = true
-            if (!viewModel.dashToFiatDirectionValue) {
-                viewModel.dashToFiatDirectionData.value = true
+            if (!viewModel.xazabToFiatDirectionValue) {
+                viewModel.xazabToFiatDirectionData.value = true
             }
             applyNewValue(it.toPlainString())
         })
@@ -280,9 +280,9 @@ class EnterAmountFragment : Fragment() {
     }
 
     private fun setupSymbolsVisibility() {
-        input_symbol.visibility = if (viewModel.dashToFiatDirectionValue) View.GONE else View.VISIBLE
-        input_symbol_dash.visibility = if (viewModel.dashToFiatDirectionValue) View.VISIBLE else View.GONE
-        calc_amount_symbol.visibility = if (viewModel.dashToFiatDirectionValue) View.VISIBLE else View.GONE
-        calc_amount_symbol_dash.visibility = if (viewModel.dashToFiatDirectionValue) View.GONE else View.VISIBLE
+        input_symbol.visibility = if (viewModel.xazabToFiatDirectionValue) View.GONE else View.VISIBLE
+        input_symbol_xazab.visibility = if (viewModel.xazabToFiatDirectionValue) View.VISIBLE else View.GONE
+        calc_amount_symbol.visibility = if (viewModel.xazabToFiatDirectionValue) View.VISIBLE else View.GONE
+        calc_amount_symbol_xazab.visibility = if (viewModel.xazabToFiatDirectionValue) View.GONE else View.VISIBLE
     }
 }
